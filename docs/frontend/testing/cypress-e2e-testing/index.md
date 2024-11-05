@@ -4,9 +4,9 @@ Docs everything for e2e testing.
 
 ### Component Testing with Cypress
 
-Example repository for component testing `https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing`
+Example repository for component testing [https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing)
 
-Example [request-info.component.cy.ts](`https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.cy.ts`) component:
+Example [request-info.component.cy.ts](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.cy.ts) component:
 
 - Runs in a real-browser, solves all dependencies, async requests, DOM and change detection problems.
 - `cy.visit` navigate wanted url.

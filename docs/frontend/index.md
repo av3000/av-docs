@@ -7,4 +7,6 @@ sidebar_position: 3
 
 List of documentation for all Front-end related topics.
 
-This is **Frontend document**!
+Good reads:
+
+[https://www.netguru.com/blog/front-end-testing](https://www.netguru.com/blog/front-end-testing)

@@ -4,11 +4,11 @@ Docs everything for component(integration) testing.
 
 ## Example repository for component testing
 
-For context we will use [https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing](`https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing`) repository.
+For context we will use [https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing) repository.
 
 ### Native way
 
-Example [request-info.component.spec.ts](`https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.spec.ts`) component:
+Example [request-info.component.spec.ts](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.spec.ts) component:
 
 - mocking dependencies from [request-info.component.ts](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.ts),
 - interact with DOM via `fixture.debugElement()`,
@@ -23,7 +23,7 @@ Example [request-info.component.spec.ts](`https://github.com/av3000/rainerhahnek
 
 ### Test with `@ngneat/spectator/jest`
 
-Example [request-info.component.spectator.spec.ts](`https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.spectator.spec.ts`) component.
+Example [request-info.component.spectator.spec.ts](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.spectator.spec.ts) component.
 
 - Spectator provised shorthand methods to handle same issues of mocking dependencies, detectChanges which automatically, handling things behind the hood by using `createComponentFactory()`.
 - `spectator.typeInElement()` selects input element and passes event value.
@@ -35,7 +35,7 @@ Example [request-info.component.spectator.spec.ts](`https://github.com/av3000/ra
 
 ### Test with `@testing-library`
 
-Example [request-info.component.tl.spec.ts](`https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.tl.spec.ts`) component:
+Example [request-info.component.tl.spec.ts](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.tl.spec.ts) component:
 
 - Provides even shorter way of handling the test using `@testing-library/angular/render` function replaces and acts as `TestBed.configure`, `creatComponent`, `fixture.detectChanges()`. Accepts html code or Component type as long as it is imported.
 - `user.type` selects input element and passes event value.
@@ -46,7 +46,7 @@ Example [request-info.component.tl.spec.ts](`https://github.com/av3000/rainerhah
 
 ### Test with `@cypress`
 
-Example [request-info.component.cy.ts](`https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.cy.ts`) component:
+Example [request-info.component.cy.ts](https://github.com/av3000/rainerhahnekamp-angular-cypress-component-testing/blob/master/src/app/holidays/request-info/request-info.component.cy.ts) component:
 
 - We can provide HTML template with stylings to test if it works as intended.
 - Runs in a real-browser, solves all dependencies, async requests, DOM and change detection problems.
