@@ -21,14 +21,27 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Tutorial",
-      items: ["tutorial-basics/create-a-document"],
+      items: [
+        "tutorial-basics/create-a-document",
+        "tutorial-basics/create-a-blog-post",
+        "tutorial-basics/create-a-page",
+        "tutorial-basics/deploy-your-site",
+        "tutorial-extras/manage-docs-versions",
+        "tutorial-extras/translate-your-site",
+        "tutorial-basics/congratulations",
+      ],
     },
   ],
   frontendSidebar: [
     {
       type: "category",
       label: "Front-End",
-      items: ["frontend/index", "frontend/testing/index"],
+      items: [
+        "frontend/index",
+        "frontend/testing/index",
+        "frontend/testing/component-testing/index",
+        "frontend/testing/cypress-e2e-testing/index",
+      ],
     },
   ],
 };
