@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkav_docusaurus_classic=self.webpackChunkav_docusaurus_classic||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/av-docs/blog","blogTitle":"Blog","authorsListPath":"/av-docs/blog/authors"}')}}]);
