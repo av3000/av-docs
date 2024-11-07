@@ -38,10 +38,29 @@ const sidebars: SidebarsConfig = {
       label: "Front-End",
       items: [
         "frontend/index",
-        "frontend/testing/index",
-        "frontend/testing/component-testing/index",
-        "frontend/testing/cypress-e2e-testing/index",
+        {
+          type: "category",
+          label: "Testing",
+          items: [
+            "frontend/testing/index",
+            "frontend/testing/component-testing/index",
+            "frontend/testing/e2e-testing/index",
+            "frontend/testing/accessibility-testing/index",
+          ],
+        },
+        {
+          type: "category",
+          label: "Styling",
+          items: ["frontend/styling/index"],
+        },
       ],
+    },
+  ],
+  systemDesignSidebar: [
+    {
+      type: "category",
+      label: "System Design",
+      items: ["system-design/index"],
     },
   ],
 };

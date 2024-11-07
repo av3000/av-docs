@@ -89,7 +89,7 @@ Mostly all reasons happen because of the need to handle manually processing whic
    We have to trigger it manually `Fixture.detectChanges` otherwise the HTML or the DOM is not up-to-date.
    There is an option to set change detection automatically, but still it will not work on all situations.
 
-#### Component testing vs Cypress component testing
+#### Component testing vs End-to-End component testing
 
 Testing of components can be done in conventional way either using native methods or 3rd party libraries or with E2E tool like Cypress.
 
@@ -114,6 +114,8 @@ Component Tests with E2E
 
 * Requires major infrastructure
 * Slow speed of execution
+
+For more detailed comparison visit [https://www.netguru.com/blog/e2e-testing-vs-integration-testing](https://www.netguru.com/blog/e2e-testing-vs-integration-testing)
 
 ### End-to-End(E2E) Test
 

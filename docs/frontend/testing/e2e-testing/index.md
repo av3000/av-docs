@@ -1,6 +1,12 @@
-# Cypress E2E Testing
+# E2E Testing
 
 Docs everything for e2e testing.
+
+## Cypress
+
+[Cypress Real World App](https://github.com/av3000/cypress-realworld-app/blob/develop/cypress.config.ts)
+
+[Best practices](https://docs.cypress.io/app/core-concepts/best-practices?utm_source=Binary%3A+App&utm_medium=Docs+Menu&utm_content=Best+Practices)
 
 ### Component Testing with Cypress
 
