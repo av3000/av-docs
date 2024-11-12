@@ -12,7 +12,7 @@ For starters, those who benefit from accessibility testing aren’t a negligible
 
 ![accesibility-testing-reasons](./accesibility-testing-reasons.png)
 
-Source: [www.microsoft.com/design/inclusive](www.microsoft.com/design/inclusive)
+Source: [https://www.microsoft.com/design/inclusive](https://www.microsoft.com/design/inclusive)
 
 As a side-effect there are other reasons how accesibility is important and affects the product:
 

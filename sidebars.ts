@@ -60,7 +60,26 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "System Design",
-      items: ["system-design/index"],
+      items: [
+        "system-design/index",
+        {
+          type: "category",
+          label: "Software",
+          items: [
+            "system-design/software/index",
+            "system-design/software/informatica-power-center",
+            "system-design/software/kafka/kafka",
+          ],
+        },
+        {
+          type: "category",
+          label: "Architecture projects",
+          items: [
+            "system-design/projects/index",
+            "system-design/projects/private-cloud-platform/index",
+          ],
+        },
+      ],
     },
   ],
 };
