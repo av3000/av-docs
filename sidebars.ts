@@ -69,6 +69,15 @@ const sidebars: SidebarsConfig = {
             "system-design/software/index",
             "system-design/software/informatica-power-center",
             "system-design/software/kafka/kafka",
+            "system-design/software/rabbitmq/rabbitmq",
+          ],
+        },
+        {
+          type: "category",
+          label: "Concepts",
+          items: [
+            "system-design/concepts/index",
+            "system-design/concepts/cloud",
           ],
         },
         {

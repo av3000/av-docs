@@ -25,16 +25,16 @@ Kafka has become a critical component of modern system architectures due to its 
 
 Most Common and impactful use cases:
 
-1. Serves as a highly reliable, scalable message queue. It decouples data **producers** from data **consumers**, which allows them to operate independently and efficiently at scale.
+1. Serves as a **highly reliable, scalable message queue**. It decouples data **producers** from data **consumers**, which allows them to operate independently and efficiently at scale.
 
 ![kafka-message-queue](kafka-message-queue.png)
 
-A major use case is **activity tracking**. Kafka is ideal for ingesting and storing real-time events like clicks, views and purchases from high traffic websites and applications.
+A major use case is **activity tracking**. Kafka is ideal for **ingesting and storing real-time events** like clicks, views and purchases from high traffic websites and applications.
 Companies like Uber and Netflix use Kafka for real-time analytics of user activity.
 
 ![kafka activity tracking](kafka-activity-tracking.png)
 
-2. For **gathering data** from many sources, Kafka can consolidate disparate streams into unified real-time pipelines for analytics and storage. This is extremely useful for aggregating internet of things and sensor data. (Search engine, analytics, web & mobile apps, databases, data warehouses/lakes)
+2. For **gathering data** from many sources, Kafka can **consolidate disparate streams into unified real-time pipelines** for analytics and storage. This is extremely useful for aggregating internet of things and sensor data. (Search engine, analytics, web & mobile apps, databases, data warehouses/lakes)
 
 ![kafka-data-bus](kafka-data-bus.png)
 
@@ -48,13 +48,24 @@ Companies like Uber and Netflix use Kafka for real-time analytics of user activi
 
 5. Enables **scalable stream processing** of big data through its **distributed architecture**. It can handle massive volume of real-time data streams. For example, processing user click streams for product recommendations, detecting anomalies in IoT sensor data, or analyzing financial market data.
 
+In summary, use cases are:
+
+- messaging system
+- collecting logs
+- collecting metrics
+- activity tracking
+- stream processing with Kafka streams API
+- decoupling of system dependencies
+- [Spark](https://spark.apache.org/), [Flink](https://flink.apache.org/), [Storm](https://storm.apache.org/), [Hadoop](https://hadoop.apache.org/) integration (Big Data technologies)
+- microservices publish/consume
+
 ## Limitations
 
 Limitations are that:
 
 - Kafka is quite complicated and has a steep learning curve.
 - It requires some expertise for setup, scaling, and maintenance.
-- It can be quite resource- intensive, requiring substantial hardware and operational investment. This might not be ideal for smaller startups or not suitable for ultra-low-latency applications like high frequency trading, where microseconds matter.
+- It can be quite resource-intensive, requiring substantial hardware and operational investment. This might not be ideal for smaller startups or not suitable for ultra-low-latency applications like high frequency trading, where microseconds matter.
 
 ## Features
 

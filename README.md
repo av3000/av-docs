@@ -42,3 +42,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 Reference for nicely designed docusaurus.
 https://shipmondo.dev/
+
+### Todo
+
+- add search [https://docusaurus.io/docs/search#using-algolia-docsearch](https://docusaurus.io/docs/search#using-algolia-docsearch)
