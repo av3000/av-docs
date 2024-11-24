@@ -87,7 +87,12 @@ const config: Config = {
           position: "right",
           label: "System Design",
         },
-
+        {
+          type: "docSidebar",
+          sidebarId: "programmingLanguages",
+          position: "right",
+          label: "Languages",
+        },
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",

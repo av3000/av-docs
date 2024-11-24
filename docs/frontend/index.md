@@ -5,6 +5,11 @@ sidebar_position: 3
 
 # Frontend
 
+[Angular](./angular/index)
+[Styling](./styling/index)
+[Testing](./testing/index)
+[Patterns](./patterns/index)
+
 List of documentation for all Front-end related topics.
 
 Good reads:

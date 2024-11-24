@@ -1,5 +1,7 @@
 # Cloud
 
+More [Cloud key concepts](https://www.ness.com/cloud-computing-101-understanding-the-basics-and-key-concepts)
+
 Cloud computing is an operating model of enabling on-demand access to computing resources such as servers, storage, databases, and applications by sharing them over the internet. Cloud-based services are a revolutionary way of empowering businesses to access computing resources as a utility service instead of investing in expensive hardware and infrastructure. It gives businesses the flexibility to scale and be cost efficient by making the best possible use of cloud resources
 
 **Cloud infrastructure**. It involves a range of hardware and software such as servers, storage & networking devices, virtualization software & management tools housed in data centers that can be accessed through the internet. A client accessing cloud infrastructure can scale their computing needs as it designed to be elastic and automatically adjust based on business demands. It is highly available with multiple backup and failure mitigation mechanisms to ensure business continuity.
@@ -138,8 +140,10 @@ The fundamental blocks of Cloud Computing are [Compute](#1-compute), [Storage](#
 - Monitoring and Logging:
   - **Amazon CloudWatch**, **Google Cloud Monitoring**, **Azure Monitor**.
   - Third-party integrations include **Grafana** and **Kibana** for dashboarding.
-- Messaging and Queues:
-  - **Amazon SQS** (for message queueing), **RabbitMQ**, **Apache Kafka** for streaming data.
+- In memory Messaging:
+  - **Amazon SQS**, **ActiveMQ**, **RabbitMQ** for message queueing,
+- Log based Messaging:
+  - **Apache Kafka**, **Amazon Kinesis** for streaming data.
 
 ### 7. **Data Analytics and Machine Learning**
 
