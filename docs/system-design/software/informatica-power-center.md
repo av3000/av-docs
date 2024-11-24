@@ -10,6 +10,8 @@ Modern alternative - [Google BigQuery](https://cloud.google.com/bigquery/)
 **Informatica PowerCenter** is an ETL (Extract, Transform, Load) tool used for integrating and managing data from multiple sources, such as recent changes or new entries, allowing organizations to build enterprise Data Warehouses or Data Marts and enable data analytics.
 It provides functionalities for data extraction, transformation, and loading, also known as ETL pipelines, to support data-driven decision-making.
 
+CFT - Cross file transfer used for machine to machine file transfer with remote control for resuming interrupted transfers.
+
 ## Data Extraction
 
 The Extract phase involves gathering raw data from various source systems. In this CRM architecture, the source data can include:

@@ -12,6 +12,12 @@ Apache Kafka is an open-source distributed event streaming versatile platform us
 Kafka is a versatile platform that execls at scalable, real-time data streaming for modern architectures.
 Its code queuing and messaging features power an array of critical applications and workloads.
 
+## Use cases
+
+Mostly used in big data architectures, its distributed log structure allows to process vast amounts of data in sequence and replay events in the correct order.
+
+LinkedIn, Netflix and Uber uses kafka to ingest and process real-time user interactions, clickstream data and events pushing data into data lakes or data warehouses.
+
 ## Principles
 
 **Event streams** are organized into topics that are distributed across multiple servers called brokers. This ensures data is easily accessible and resilient to system crashes. Applications that feed data into Kafka are called **producers**, while those that consume data are called **consumers**.
@@ -64,7 +70,7 @@ In summary, use cases are:
 Limitations are that:
 
 - Kafka is quite complicated and has a steep learning curve.
-- It requires some expertise for setup, scaling, and maintenance.
+- It requires some expertise for setup, scaling, and maintenance, for example optimizing partitions for fast messages as due to in-order processing even a single message can slow down the whole queue.
 - It can be quite resource-intensive, requiring substantial hardware and operational investment. This might not be ideal for smaller startups or not suitable for ultra-low-latency applications like high frequency trading, where microseconds matter.
 
 ## Features
@@ -166,9 +172,9 @@ The producer can also use a customized partitioner to map messages to partitions
 
 ### Consumer
 
-Application which subscribe to **topics** and **process published messages**, also refered to as **subscribers** or **readers**. Reads the messages in the order they were generated, using **offset** to track which message it has already consumed.
-The consumer stores the offset of the last consumed message for each partition so that it can stop and restart without losing its place. Consumers interact with a topic as a group, although a group consists of only one consumer.
-This enables scalable processing. The group ensures that one member only consumes each partition, if a single consumer fails, the group's remaining members reorganize the consumed partitions to compensate for the absent member.
+Application which subscribe to **topics** and **process published messages**, also refered to as **subscribers** or **readers**. Reads the messages in the order they were generated within each partition, using **offset** to track which last message it has already consumed.
+The consumer stores the offset of the last consumed message for each partition so that it can stop and restart without losing its place. in case of failure.
+Consumers can interact with a topic as a group, each partition in a topic, enabling scalable processing. The group ensures that one member only consumes each partition, if a single consumer fails, the group's remaining members reorganize the consumed partitions to compensate for the absent member.
 
 ### Cluster
 
