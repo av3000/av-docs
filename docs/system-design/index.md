@@ -17,6 +17,18 @@ Separation is logical, and not necesarrily physical, it helps us make sense of t
 
 ## Glossary
 
+Glossary should be like list of tables, grouped by categories, for example:
+
+- Architecture(link-to-intro-of-architecture)
+  - architecture type A(link-to-doc)
+  - architecture type B(link-to-doc)
+  - architecture type C(link-to-doc)
+- title(link-to-doc)
+- title(link-to-doc)
+- title(link-to-doc)
+- title(link-to-doc)
+- title(link-to-doc)
+
 ### Concepts
 
 Layered Architecture

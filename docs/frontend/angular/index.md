@@ -20,6 +20,8 @@ It does things like compile and serve project on a local host environment, build
 
 ## Repositories for example good practices
 
+[Google dev library with currated projects for quality example implementations](https://devlibrary.withgoogle.com/)
+
 Official architecture example repository [Hero List](https://stackblitz.com/run?file=src%2Fapp%2Fhero-list.component.html)
 
 [https://github.com/muhammadawaisshaikh/solid-design-pattern-angular](https://github.com/muhammadawaisshaikh/solid-design-pattern-angular)
