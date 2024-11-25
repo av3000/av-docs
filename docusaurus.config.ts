@@ -89,6 +89,12 @@ const config: Config = {
         },
         {
           type: "docSidebar",
+          sidebarId: "devopsSidebar",
+          position: "right",
+          label: "DevOps",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "programmingLanguages",
           position: "right",
           label: "Languages",

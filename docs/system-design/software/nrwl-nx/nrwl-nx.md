@@ -1,6 +1,20 @@
 # NX - build system
 
-Nx is a powerful build system optimized for managing monorepos, and it's often used in organizations that manage large-scale projects.
+Nx is a powerful build system optimized for managing monorepos, and it's often used in organizations that manage large-scale projects. Helps to manage multiple projects like frontend and backend in a single organized repository.
+
+Nx organizes your monorepo into a workspace with `apps/` for applications and `libs/` for shared resources. This structure keeps everything clear, promotes reusability, and simplifies navigation.
+
+## Why NX?
+
+1. Unified workspace. Keeps our Angular, React, Node.js and other apps in one repo without chaos. FE and BE project under the same roof.
+
+2. Smart builds. Knows what to rebuild and what to skip, changing a small part of the code does not waste time rebuilding everything.
+
+3. Shared libraries. Share common utilities or components across your apps avoiding duplicate code and making updates faster.
+
+4. Code analysis. Analyzes code dependencies and shows how apps and libraries are connected.
+
+5. Powerful CLI and Extensions. Generate apps, libraries, and even CI/CD pipelines within a few commands. Plus supports tools like Jest, Cypress and ESLint.
 
 ---
 
@@ -13,7 +27,7 @@ A **build system** automates the process of transforming source code into a fina
 - Running tests and linters.
 - Generating documentation or other outputs.
 
-Nx is a build system because it handles these tasks for you, but it goes a step further by optimizing builds in a monorepo context.
+Nx is a build system because it handles these tasks for us, but it goes a step further by optimizing builds in a monorepo context.
 
 ---
 
