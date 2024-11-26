@@ -16,6 +16,10 @@ This guide will cover:
 
 ---
 
+## Good reads for real-world examples:
+
+[https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/)
+
 ## **Approaches to Scalable and Modular CSS**
 
 ### **1. BEM (Block, Element, Modifier)**

@@ -18,11 +18,19 @@ Uses library RxJs for reactivity, allowing to easily react and instantly reflect
 **Angular CLI**. Command line tool that we install to generate files and folders, talk to different modules, create components and much more alleviation of the boiler plate and manually wiring up our tasks. Packed with a lot of sensible defaults for easier development experience.
 It does things like compile and serve project on a local host environment, build for dev and production.
 
+## Good reads
+
+[Angular renaissance - shift to modern developer](https://thenewstack.io/the-angular-renaissance-why-frontend-devs-should-revisit-it/)
+
 ## Repositories for example good practices
+
+[Angular Enterprise monorepo patterns](https://go.nx.dev/angular-enterprise-monorepo-patterns-new-book)
 
 [Google dev library with currated projects for quality example implementations](https://devlibrary.withgoogle.com/)
 
-Official architecture example repository [Hero List](https://stackblitz.com/run?file=src%2Fapp%2Fhero-list.component.html)
+[Set of Angular challenges to practice and train on Angular](https://github.com/tomalaforge/angular-challenges)
+
+[Official architecture example repository 'Hero List'](https://stackblitz.com/run?file=src%2Fapp%2Fhero-list.component.html)
 
 [https://github.com/muhammadawaisshaikh/solid-design-pattern-angular](https://github.com/muhammadawaisshaikh/solid-design-pattern-angular)
 

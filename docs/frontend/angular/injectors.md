@@ -23,6 +23,9 @@ Here's a simplified algorithm:
 
 Injection tokens are an Angular concept which allow us to declare independent unique dependency injection tokens to inject values into other classes using the Inject decorator.
 
+TODO: explore wide usage of InjectionToken's
+[Creating a plugin driven application](https://kasiabiernat.github.io/blog/01-create-a-plugin-driven/)
+
 [https://angular.io/api/core/InjectionToken](https://angular.io/api/core/InjectionToken)
 
 - Prevents circular dependencies.
