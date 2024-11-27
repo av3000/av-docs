@@ -5,10 +5,10 @@ sidebar_position: 3
 
 # Frontend
 
-[Angular](./angular/index)
-[Styling](./styling/index)
-[Testing](./testing/index)
-[Patterns](./patterns/index)
+[Angular](./angular/index.md)
+[Styling](./styling/index.md)
+[Testing](./testing/index.md)
+[Patterns](./patterns/index.md)
 
 List of documentation for all Front-end related topics.
 

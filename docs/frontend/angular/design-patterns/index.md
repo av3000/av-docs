@@ -12,13 +12,13 @@ sidebar_position: 1
 
 ### Creational Patterns
 
-[Creational Patterns](./creational-patterns/index)
+[Creational Patterns](./creational-patterns/index.md)
 
-- [Singleton](./creational-patterns/singleton)
-- [Factory Method](./creational-patterns/factory-method)
-- [Abstract Factory](./creational-patterns/abstract-factory)
-- [Builder](./creational-patterns/builder)
-- [Prototype](./creational-patterns/prototype)
+- [Singleton](./creational-patterns/singleton.md)
+- [Factory Method](./creational-patterns/factory-method.md)
+- [Abstract Factory](./creational-patterns/abstract-factory.md)
+- [Builder](./creational-patterns/builder.md)
+- [Prototype](./creational-patterns/prototype.md)
 
 ### Creational Pattern Examples
 
@@ -45,13 +45,13 @@ How to find: Look for FormBuilder injection and usage in component files
 
 Structural patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
 
-- [Adapter](./structural-patterns/adapter)
-- [Bridge](./structural-patterns/bridge)
-- [Composite](./structural-patterns/composite)
-- [Decorator](./structural-patterns/decorator)
-- [Facade](./structural-patterns/facade)
-- [Flyweight](./structural-patterns/flyweight)
-- [Proxy](./structural-patterns/proxy)
+- [Adapter](./structural-patterns/adapter.md)
+- [Bridge](./structural-patterns/bridge.md)
+- [Composite](./structural-patterns/composite.md)
+- [Decorator](./structural-patterns/decorator.md)
+- [Facade](./structural-patterns/facade.md)
+- [Flyweight](./structural-patterns/flyweight.md)
+- [Proxy](./structural-patterns/proxy.md)
 
 ### Structural Pattern Examples
 
@@ -76,16 +76,16 @@ How to find: Analyze component templates for nested custom elements
 
 Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
-- [Chain of Responsibility](./behavioural-patterns/chain-of-responsibility)
-- [Command](./behavioural-patterns/command)
-- [Iterator](./behavioural-patterns/iterator)
-- [Mediator](./behavioural-patterns/mediator)
-- [Memento](./behavioural-patterns/memento)
-- [Observer](./behavioural-patterns/observer)
-- [State](./behavioural-patterns/state)
-- [Strategy](./behavioural-patterns/strategy)
-- [Template Method](./behavioural-patterns/template-method)
-- [Visitor](./behavioural-patterns/visitor)
+- [Chain of Responsibility](./behavioural-patterns/chain-of-responsibility.md)
+- [Command](./behavioural-patterns/command.md)
+- [Iterator](./behavioural-patterns/iterator.md)
+- [Mediator](./behavioural-patterns/mediator.md)
+- [Memento](./behavioural-patterns/memento.md)
+- [Observer](./behavioural-patterns/observer.md)
+- [State](./behavioural-patterns/state.md)
+- [Strategy](./behavioural-patterns/strategy.md)
+- [Template Method](./behavioural-patterns/template-method.md)
+- [Visitor](./behavioural-patterns/visitor.md)
 
 ### Behavioural Pattern Examples
 
@@ -118,7 +118,7 @@ This means that the main class does not worry about how the dependencies are cre
 - Facilitates testing and maintenance of the code, as it is easier to change or replace a specific component or service without affecting others.
 - Allows different components or services to share information and work together efficiently.
 
-Example of [Dependency Injection in Angular](./dependency-injection#di-mechanism)
+Example of [Dependency Injection in Angular](./dependency-injection#di-mechanism.md)
 
 ```js
 import { Injectable } from '@angular/core';
