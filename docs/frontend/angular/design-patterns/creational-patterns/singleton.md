@@ -30,7 +30,7 @@ export class AuthService {
 }
 ```
 
-By setting providedIn to ‘root’, we ensure that the service is only instantiated once and is available throughout the entire application. More in [Injectable providedIn root](./injectors#providedin-root)
+By setting providedIn to ‘root’, we ensure that the service is only instantiated once and is available throughout the entire application. More in [Injectable providedIn root](../../injectors.md#providedin-root)
 
 #### When to use
 

@@ -14,7 +14,7 @@ sidebar_position: 1
 - [YAGNI](#yagni---you-are-not-gonna-need-it)
 - [KISS](#kiss---keep-it-simple-stupid)
 - [DRY](#dry---do-not-repeat-yourself)
-- [SOLID](#SOLID)
+- [SOLID](#solid)
 
 ## YAGNI - you are not gonna need it
 

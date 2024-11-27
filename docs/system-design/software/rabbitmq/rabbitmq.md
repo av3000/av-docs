@@ -1,6 +1,6 @@
 # RabbitMQ
 
-Message broker for [message queueing](../../concepts/index.md#message-queueing).
+Message broker for [message queueing](../../concepts/message-queue.md).
 
 RabbitMQ is an implementation of the AMQP(advanced message queueing protocol) message model(version 0.9.1), In memory message broker.
 

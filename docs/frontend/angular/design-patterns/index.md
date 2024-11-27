@@ -118,7 +118,7 @@ This means that the main class does not worry about how the dependencies are cre
 - Facilitates testing and maintenance of the code, as it is easier to change or replace a specific component or service without affecting others.
 - Allows different components or services to share information and work together efficiently.
 
-Example of [Dependency Injection in Angular](./dependency-injection#di-mechanism.md)
+Example of [Dependency Injection in Angular](../dependency-injection.md#di-mechanism)
 
 ```js
 import { Injectable } from '@angular/core';

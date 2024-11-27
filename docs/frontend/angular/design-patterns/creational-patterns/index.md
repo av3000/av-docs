@@ -7,5 +7,5 @@ sidebar_position: 1
 
 All patterns related to creational part
 
-- [Singleton](./singleton)
-- [Factory Method](./factory-method)
+- [Singleton](./singleton.md)
+- [Factory Method](./factory-method.md)
