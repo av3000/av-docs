@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-system-design/architecture/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.0">
+<title data-rh="true">Architecture | AVsaurus</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://av3000.github.io/av-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://av3000.github.io/av-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://av3000.github.io/av-docs/docs/system-design/architecture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Architecture | AVsaurus"><meta data-rh="true" name="description" content="Move these to separate folders and document."><meta data-rh="true" property="og:description" content="Move these to separate folders and document."><link data-rh="true" rel="icon" href="/av-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://av3000.github.io/av-docs/docs/system-design/architecture"><link data-rh="true" rel="alternate" href="https://av3000.github.io/av-docs/docs/system-design/architecture" hreflang="en"><link data-rh="true" rel="alternate" href="https://av3000.github.io/av-docs/docs/system-design/architecture" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/av-docs/blog/rss.xml" title="AVsaurus RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/av-docs/blog/atom.xml" title="AVsaurus Atom Feed"><link rel="stylesheet" href="/av-docs/assets/css/styles.602a3cf0.css">
+<script src="/av-docs/assets/js/runtime~main.cfd8cd92.js" defer="defer"></script>
+<script src="/av-docs/assets/js/main.542b2d50.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/av-docs/"><div class="navbar__logo"><img src="/av-docs/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/av-docs/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AVsaurus</b></a><a class="navbar__item navbar__link" href="/av-docs/docs/tutorial-basics/create-a-document">Tutorial</a><a class="navbar__item navbar__link" href="/av-docs/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/av-docs/docs/frontend">Front-End</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/av-docs/docs/system-design">System Design</a><a class="navbar__item navbar__link" href="/av-docs/docs/devops/patterns">DevOps</a><a class="navbar__item navbar__link" href="/av-docs/docs/languages/javascript">Languages</a><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/av-docs/docs/system-design">System Design</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/av-docs/docs/system-design">Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/av-docs/docs/system-design/software">Software</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/av-docs/docs/system-design/concepts">Concepts</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/av-docs/docs/system-design/architecture">Architecture</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/av-docs/docs/system-design/architecture">Architecture</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/av-docs/docs/system-design/projects">Projects examples of System Design</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/av-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">System Design</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Architecture</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Architecture</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Architecture</h1></header>
+<p>Move these to separate folders and document.</p>
+<ol>
+<li>Clean Code.</li>
+<li>SOLID Principles.</li>
+<li>Clean Architecture.</li>
+<li>Domain-Driven Design (DDD).</li>
+<li>Test-Driven Development (TDD).</li>
+<li>Continuous Integration &amp; Continuous Delivery (CI/CD).</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="microservices">Microservices<a href="#microservices" class="hash-link" aria-label="Direct link to Microservices" title="Direct link to Microservices">​</a></h2>
+<p>Microservices are a type of distributed system architecture, dealing with communication, data sharing, and resilience among independently running services.</p>
+<p>Example ticket App with each part as a separate service:</p>
+<ul>
+<li>UI</li>
+<li>Inventory component</li>
+<li>recommendation engine suggesting outputs based on user inputs</li>
+<li>shopping cart</li>
+<li>payment service</li>
+<li>reporting function</li>
+</ul>
+<p>Strengths:</p>
+<ul>
+<li>All services talk via API&#x27;s.</li>
+<li>No constrains of language/framework for the team.</li>
+<li>Service team owns container, has control over DevOps pipeline, builds, tests and deploy independently.</li>
+<li>Independently scalable, enabling resource optimization based on demand.</li>
+<li>Less risk in change, easier to monitor and manage, do not impact other parts of system.</li>
+</ul>
+<p><strong>Straits of a good microservice</strong>:</p>
+<ul>
+<li><strong>Small</strong>. Refactoring fully does not have to scare us, if it does, most probably it is bigger than intended. Understanding of logic should fit in a head.</li>
+<li><strong>Focus on one task</strong>. Strong separation of concers, looking from outside it should accomplish one task/feature only.</li>
+<li><strong>Bounded context</strong>. There should be significant distinction between external protocol with which microservice exchange information with other parts of the system/microservices, versus the internal representation of that service and the model within. Difference should be treated seriously between design of API&#x27;s and entry points using <strong>ports(interfaces) and adapters(implementations)</strong>, not using there most likely means that we make a big design mistake.</li>
+<li><strong>Autonomous</strong>. The most real value of microservices is <strong>implementation can be changed without the need of coordination with others</strong>. Microservices not designed to be build, tested and deployed together. <em>Service based design is not a Microservice</em>.</li>
+</ul>
+<p><em>Example of Service-Based Design</em>.</p>
+<p>Consider an online store application divided into services like <code>User Management</code>, <code>Product Catalog</code>, and <code>Order Processing</code>. These services are modules within the same application, possibly sharing a database, and deployed together. Communication between services is through method calls rather than network calls.</p>
+<p>Weaknesses:</p>
+<ul>
+<li>Increased complexity managing multiple services communication.</li>
+<li>Distributed system challenges of network latency, data consistency and handling of service failures is more complex and requires knowledge in desing and tooling.</li>
+<li>More infrastructure requires more costs like load-balancing, monitoring tools, CI/CD pipelines.</li>
+<li>Data management complexity like for each service owning databases, requiring consistency patterns implementation.</li>
+<li>Integration testing more complex requiring to be tested in isolation and as a whole system.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="monolith">Monolith<a href="#monolith" class="hash-link" aria-label="Direct link to Monolith" title="Direct link to Monolith">​</a></h2>
+<p>Server-side system based on a single application which is easy to develop, deploy, manage.
+traditionally found in applications with a single codebase where all functionality of UI, databases, and business logic is closely integrated.</p>
+<p>Example ticket App:</p>
+<ul>
+<li>UI</li>
+<li>Inventory component</li>
+<li>recommendation engine suggesting outputs based on user inputs</li>
+<li>shopping cart</li>
+<li>payment service</li>
+<li>reporting function</li>
+</ul>
+<p>Strengths:</p>
+<ul>
+<li>Simple development and deployment (<em>initially</em>).</li>
+<li>Communication performs faster.</li>
+<li>Lower infrastructure costs with less services needed.</li>
+</ul>
+<p>Challenges:</p>
+<ul>
+<li>Highly dependent. Sharing libraries within architecture, tightly-coupled.</li>
+<li>Language/Framework. App written in Java must be developed only in Java, dependant on decisions made in the past.</li>
+<li>Growth. In time, additional features will grow and complexity grows to it.</li>
+<li>Hard deployment and time consuming. Application must be turned off at some point and re-reployed as a whole.</li>
+<li>Serving. Scaling resources for Payment service would require to redeploy and hurt business value.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architecture-concepts">Architecture Concepts<a href="#architecture-concepts" class="hash-link" aria-label="Direct link to Architecture Concepts" title="Direct link to Architecture Concepts">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="distributed-computing"><strong>Distributed Computing</strong><a href="#distributed-computing" class="hash-link" aria-label="Direct link to distributed-computing" title="Direct link to distributed-computing">​</a></h3>
+<p><strong>Explanation:</strong>
+Distributed computing involves multiple computers working together to solve a problem or perform tasks. These systems share resources and coordinate their actions by passing messages to one another. The main goal is to improve performance, scalability, and reliability.</p>
+<p><strong>Example:</strong>
+A distributed database where data is stored across multiple servers. When a user queries the database, the system coordinates among servers to retrieve and aggregate the required data.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="object-request-brokers-orbs"><strong>Object Request Brokers (ORBs)</strong><a href="#object-request-brokers-orbs" class="hash-link" aria-label="Direct link to object-request-brokers-orbs" title="Direct link to object-request-brokers-orbs">​</a></h3>
+<p><strong>Explanation:</strong>
+An Object Request Broker is middleware that enables communication between distributed objects in a network. ORBs handle method invocations between objects located on different machines, abstracting the network communication details.</p>
+<p><strong>Example:</strong>
+CORBA (Common Object Request Broker Architecture) allows a Java application on one machine to invoke methods on a C++ object on another machine seamlessly.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cooperative-business-objects"><strong>Cooperative Business Objects</strong><a href="#cooperative-business-objects" class="hash-link" aria-label="Direct link to cooperative-business-objects" title="Direct link to cooperative-business-objects">​</a></h3>
+<p><strong>Explanation:</strong>
+Cooperative Business Objects are components that represent business entities and processes, collaborating to perform complex business functions. They encapsulate both data and behavior, promoting reuse and modularity.</p>
+<p><strong>Example:</strong>
+In an e-commerce application, separate business objects for <code>Customer</code>, <code>Order</code>, and <code>Inventory</code> cooperate to process a purchase: validating customer info, updating inventory, and recording the order.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="component-based-development"><strong>Component-Based Development</strong><a href="#component-based-development" class="hash-link" aria-label="Direct link to component-based-development" title="Direct link to component-based-development">​</a></h3>
+<p><strong>Explanation:</strong>
+This approach involves building software systems by assembling pre-existing, reusable components. Each component is a modular, deployable, and replaceable part of a system that encapsulates implementation and exposes interfaces.</p>
+<p><strong>Example:</strong>
+Using UI components like buttons and forms from a framework (React components) to build a web application.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="message-oriented-architecture"><strong>Message-Oriented Architecture</strong><a href="#message-oriented-architecture" class="hash-link" aria-label="Direct link to message-oriented-architecture" title="Direct link to message-oriented-architecture">​</a></h3>
+<p><strong>Explanation:</strong>
+An architectural style where systems communicate by sending and receiving messages asynchronously via a messaging system. It decouples the sender and receiver, enhancing scalability and reliability.</p>
+<p><strong>Example:</strong>
+An order processing system where orders are placed onto a message queue. Different services (inventory, shipping, billing) consume messages from the queue to process the order independently.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="service-oriented-architecture-soa"><strong>Service-Oriented Architecture (SOA)</strong><a href="#service-oriented-architecture-soa" class="hash-link" aria-label="Direct link to service-oriented-architecture-soa" title="Direct link to service-oriented-architecture-soa">​</a></h3>
+<p><strong>Explanation:</strong>
+SOA is a design paradigm where software components provide services to other components over a network via a communication protocol. Services are self-contained and discoverable, promoting loose coupling and interoperability.</p>
+<p><strong>Example:</strong>
+A payment service that can be used by different applications (web, mobile, desktop) via standard protocols like SOAP or REST.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="event-driven-architecture"><strong>Event-Driven Architecture</strong><a href="#event-driven-architecture" class="hash-link" aria-label="Direct link to event-driven-architecture" title="Direct link to event-driven-architecture">​</a></h3>
+<p><strong>Explanation:</strong>
+In this architecture, components respond to events (changes in state) rather than direct method calls. It&#x27;s useful for applications that require real-time processing and responsiveness.</p>
+<p><strong>Example:</strong>
+A stock trading platform where price changes trigger events that are consumed by various services (alerts, analytics, portfolio updates).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="command-query-responsibility-segregation-cqrs"><strong>Command Query Responsibility Segregation (CQRS)</strong><a href="#command-query-responsibility-segregation-cqrs" class="hash-link" aria-label="Direct link to command-query-responsibility-segregation-cqrs" title="Direct link to command-query-responsibility-segregation-cqrs">​</a></h3>
+<p><strong>Explanation:</strong>
+CQRS separates read and write operations into different models, optimizing each for its specific purpose. Commands change the state, while queries read the state.</p>
+<p><strong>Example:</strong>
+In a banking system, write operations (money transfers) use one model to ensure data integrity, while read operations (account balance inquiries) use another optimized for performance.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="microservices-1"><strong>Microservices</strong><a href="#microservices-1" class="hash-link" aria-label="Direct link to microservices-1" title="Direct link to microservices-1">​</a></h3>
+<p><strong>Explanation:</strong>
+An architectural style where an application is composed of small, independent services that communicate over well-defined APIs. Each microservice focuses on a specific business capability.</p>
+<p><strong>Example:</strong>
+An e-commerce platform where the cart, product catalog, user reviews, and payment are separate microservices that can be developed, deployed, and scaled independently.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reactive-systems"><strong>Reactive Systems</strong><a href="#reactive-systems" class="hash-link" aria-label="Direct link to reactive-systems" title="Direct link to reactive-systems">​</a></h3>
+<p><strong>Explanation:</strong>
+Reactive systems are designed to be responsive, resilient, elastic, and message-driven. They handle asynchronous data streams and react to changes promptly.</p>
+<p><strong>Example:</strong>
+A social media platform that updates feeds in real-time as new posts are made, adjusting to varying loads and recovering from failures without downtime.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="explanation-of-service-based-design"><strong>Explanation of Service-Based Design</strong><a href="#explanation-of-service-based-design" class="hash-link" aria-label="Direct link to explanation-of-service-based-design" title="Direct link to explanation-of-service-based-design">​</a></h3>
+<p>Service-based design is an architectural approach where applications are built using a set of services. These services are larger than microservices and are often organized around business capabilities or domains. The focus is on modularity and separation of concerns, but services may still be part of a single application deployment and may share resources like databases.</p>
+<p>Developers often mistake service-based design for microservices because both involve breaking down applications into services. However, the key difference lies in the level of decoupling and independence. Microservices require a higher degree of isolation, independent deployment, and ownership, which adds complexity in terms of distributed systems management, monitoring, and debugging.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="differences-between-service-based-design-and-microservices"><strong>Differences Between Service-Based Design and Microservices</strong><a href="#differences-between-service-based-design-and-microservices" class="hash-link" aria-label="Direct link to differences-between-service-based-design-and-microservices" title="Direct link to differences-between-service-based-design-and-microservices">​</a></h3>
+<ul>
+<li>
+<p><strong>Granularity:</strong></p>
+<ul>
+<li>Service-Based Design: Services are relatively larger and encompass broader functionality.</li>
+<li>Microservices: Services are fine-grained and focus on single functionalities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Deployment:</strong></p>
+<ul>
+<li>Service-Based Design: Services may be deployed together as part of a monolith or fewer deployment units.</li>
+<li>Microservices: Each microservice is deployed independently.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Storage:</strong></p>
+<ul>
+<li>Service-Based Design: Services may share a common database.</li>
+<li>Microservices: Each microservice typically has its own database to ensure loose coupling.</li>
+</ul>
+</li>
+<li>
+<p><strong>Communication:</strong></p>
+<ul>
+<li>Service-Based Design: Services might communicate through direct method calls within the same process.</li>
+<li>Microservices: Services communicate over the network using lightweight protocols (REST, gRPC).</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/system-design/architecture/index.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/av-docs/docs/system-design/concepts/cloud"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Cloud</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/av-docs/docs/system-design/projects"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Intro</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#microservices" class="table-of-contents__link toc-highlight">Microservices</a></li><li><a href="#monolith" class="table-of-contents__link toc-highlight">Monolith</a></li><li><a href="#architecture-concepts" class="table-of-contents__link toc-highlight">Architecture Concepts</a><ul><li><a href="#distributed-computing" class="table-of-contents__link toc-highlight"><strong>Distributed Computing</strong></a></li><li><a href="#object-request-brokers-orbs" class="table-of-contents__link toc-highlight"><strong>Object Request Brokers (ORBs)</strong></a></li><li><a href="#cooperative-business-objects" class="table-of-contents__link toc-highlight"><strong>Cooperative Business Objects</strong></a></li><li><a href="#component-based-development" class="table-of-contents__link toc-highlight"><strong>Component-Based Development</strong></a></li><li><a href="#message-oriented-architecture" class="table-of-contents__link toc-highlight"><strong>Message-Oriented Architecture</strong></a></li><li><a href="#service-oriented-architecture-soa" class="table-of-contents__link toc-highlight"><strong>Service-Oriented Architecture (SOA)</strong></a></li><li><a href="#event-driven-architecture" class="table-of-contents__link toc-highlight"><strong>Event-Driven Architecture</strong></a></li><li><a href="#command-query-responsibility-segregation-cqrs" class="table-of-contents__link toc-highlight"><strong>Command Query Responsibility Segregation (CQRS)</strong></a></li><li><a href="#microservices-1" class="table-of-contents__link toc-highlight"><strong>Microservices</strong></a></li><li><a href="#reactive-systems" class="table-of-contents__link toc-highlight"><strong>Reactive Systems</strong></a></li><li><a href="#explanation-of-service-based-design" class="table-of-contents__link toc-highlight"><strong>Explanation of Service-Based Design</strong></a></li><li><a href="#differences-between-service-based-design-and-microservices" class="table-of-contents__link toc-highlight"><strong>Differences Between Service-Based Design and Microservices</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/av-docs/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/av-docs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
