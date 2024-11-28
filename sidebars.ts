@@ -155,7 +155,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Programming Languages",
-      items: ["languages/javascript/index"],
+      items: ["languages/javascript/index", "languages/typescript/index"],
     },
   ],
 };

@@ -1,5 +1,98 @@
 # Singleton Pattern
 
+Use case: Shared service instances across the application.
+
+Example: Angular's built-in services like HttpClient provided via dependency injection.
+
+How to find: Look for `@Injectable({ providedIn: 'root' })` decorators.
+
+In Angular, services are often singletons when provided in the root injector. This means there's only one instance of the service throughout the application. The Singleton pattern ensures a class has only one instance and provides a global point of access to it.
+
+By using `@Injectable({ providedIn: 'root' })`, Angular ensures that the service is registered with the root injector, making it a singleton. This is useful for services that maintain state or provide utility functions that need to be shared across multiple components.
+
+```js
+// logging.service.ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class LoggingService {
+  private logs: string[] = [];
+
+  add(message: string) {
+    this.logs.push(message);
+    console.log('Log added:', message);
+  }
+
+  clear() {
+    this.logs = [];
+    console.log('Logs cleared');
+  }
+
+  getLogs() {
+    return this.logs;
+  }
+}
+
+// any-component.component.ts
+import { Component } from '@angular/core';
+import { LoggingService } from './logging.service';
+
+@Component({
+  selector: 'app-any-component',
+  template: `<button (click)="doSomething()">Do Something</button>`,
+})
+export class AnyComponent {
+  constructor(private loggingService: LoggingService) {}
+
+  doSomething() {
+    this.loggingService.add('AnyComponent did something.');
+  }
+}
+
+// another-component.component.ts
+import { Component } from '@angular/core';
+import { LoggingService } from './logging.service';
+
+@Component({
+  selector: 'app-another-component',
+  template: `<button (click)="doSomethingElse()">Do Something Else</button>`,
+})
+export class AnotherComponent {
+  constructor(private loggingService: LoggingService) {}
+
+  doSomethingElse() {
+    this.loggingService.add('AnotherComponent did something else.');
+  }
+}
+
+// app.component.ts
+import { Component } from '@angular/core';
+import { LoggingService } from './logging.service';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <app-any-component></app-any-component>
+    <app-another-component></app-another-component>
+    <button (click)="showLogs()">Show Logs</button>
+  `,
+})
+export class AppComponent {
+  constructor(private loggingService: LoggingService) {}
+
+  showLogs() {
+    console.log(this.loggingService.getLogs());
+  }
+}
+```
+
+- The LoggingService is provided in the root injector, making it a singleton.
+- Multiple components inject LoggingService and interact with the same instance.
+- The logs collected from different components are stored in the same service instance.
+- This demonstrates the Singleton pattern by ensuring there's only one LoggingService instance shared across the application.
+
 ### Singleton Pattern
 
 There are two ways to make a service a singleton in Angular:

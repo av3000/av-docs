@@ -16,6 +16,16 @@ Nx organizes your monorepo into a workspace with `apps/` for applications and `l
 
 5. Powerful CLI and Extensions. Generate apps, libraries, and even CI/CD pipelines within a few commands. Plus supports tools like Jest, Cypress and ESLint.
 
+Nrwl/Nx fits into the following architectural paradigms:
+
+- Modular Monorepo Architecture: Focus on modularity and reusability.
+- Micro-Frontend or Multi-Project Architecture: Ideal for managing micro-frontends in a monorepo.
+- Dependency-Driven Architecture: Powered by its project graph and strict dependency rules.
+- Task-Oriented Architecture: Optimized task execution with caching and distribution.
+- Domain-Driven Design (DDD): Encourages domain isolation and organization.
+- CI/CD-Friendly Architecture: Built for modern DevOps workflows.
+- Polyglot Architecture: Supports multiple frameworks and technologies.
+
 ---
 
 ### What is a Build System?

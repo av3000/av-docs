@@ -12,6 +12,8 @@ sidebar_position: 1
 
 ### Creational Patterns
 
+Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+
 [Creational Patterns](./creational-patterns/index.md)
 
 - [Singleton](./creational-patterns/singleton.md)
@@ -19,25 +21,6 @@ sidebar_position: 1
 - [Abstract Factory](./creational-patterns/abstract-factory.md)
 - [Builder](./creational-patterns/builder.md)
 - [Prototype](./creational-patterns/prototype.md)
-
-### Creational Pattern Examples
-
-Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
-
-Singleton Pattern
-Use case: Shared service instances across the application
-Example: Angular's built-in services like HttpClient
-How to find: Look for `@Injectable({ providedIn: 'root' })` decorators
-
-Factory Method Pattern
-Use case: Creating objects without specifying the exact class of object to be created
-Example: Using a service to create different types of form controls
-How to find: Look for methods that return instances of a common interface or base class
-
-Builder Pattern
-Use case: Complex object construction
-Example: Using FormBuilder to create complex reactive forms
-How to find: Look for FormBuilder injection and usage in component files
 
 ---
 
@@ -52,23 +35,6 @@ Structural patterns explain how to assemble objects and classes into larger stru
 - [Facade](./structural-patterns/facade.md)
 - [Flyweight](./structural-patterns/flyweight.md)
 - [Proxy](./structural-patterns/proxy.md)
-
-### Structural Pattern Examples
-
-Decorator Pattern
-Use case: Adding behavior to components or services without modifying their code
-Example: Using Angular decorators like @Component, @Injectable, or custom property decorators
-How to find: Look for @ symbols followed by decorator names in class definitions
-
-Proxy Pattern
-Use case: Lazy loading of modules or components
-Example: Using Angular's router for lazy loading feature modules
-How to find: Check RouterModule configurations in app routing files for lazy-loaded routes
-
-Composite Pattern
-Use case: Building complex UI structures from simpler components
-Example: Nested components in Angular templates
-How to find: Analyze component templates for nested custom elements
 
 ---
 
@@ -86,25 +52,6 @@ Behavioral patterns are concerned with algorithms and the assignment of responsi
 - [Strategy](./behavioural-patterns/strategy.md)
 - [Template Method](./behavioural-patterns/template-method.md)
 - [Visitor](./behavioural-patterns/visitor.md)
-
-### Behavioural Pattern Examples
-
-Observer Pattern
-Use case: Reactive programming with RxJS
-Example: Using Subject or BehaviorSubject for state management
-How to find: Look for RxJS import statements and usage of Observables in services and components
-
-Strategy Pattern
-Use case: Implementing different algorithms or strategies that can be switched at runtime
-Example: Using different validation strategies in reactive forms
-How to find: Search for classes or functions that implement a common interface but with different logic
-
-Command Pattern
-Use case: Encapsulating a request as an object
-Example: Implementing undo/redo functionality or action creators in NgRx
-How to find: Look for classes that encapsulate all information needed to perform an action or trigger an event
-
----
 
 ### Inversion of Control Pattern (With DI)
 
