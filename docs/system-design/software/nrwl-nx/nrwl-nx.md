@@ -6,6 +6,8 @@ Nx organizes your monorepo into a workspace with `apps/` for applications and `l
 
 ## Why NX?
 
+[NX Monorepo benefits and challenges](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
+
 1. Unified workspace. Keeps our Angular, React, Node.js and other apps in one repo without chaos. FE and BE project under the same roof.
 
 2. Smart builds. Knows what to rebuild and what to skip, changing a small part of the code does not waste time rebuilding everything.
