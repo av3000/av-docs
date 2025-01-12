@@ -35,11 +35,15 @@ There are 3 main categories of testing:
 Structure of software tests to ensure reliable, efficient, and scalable testing practices.
 It provides a clear guideline on how to distribute different types of tests in a project to achieve high test coverage with minimal maintenance costs.
 
+Moving from bottom to top of the pyramid, the tests are slower, become more complex and takes more time to maintain.
+
 ## Types of Testing
 
 ### Unit Test
 
-Unit testing is the fundamental building block of frontend testing. It analyzes individual components and functions to ensure they’re working as expected. This is crucial for any frontend application, testing your components and features against how you expect them to behave in production, leading to a stable codebase and a reliable app for your customers. You can also use unit testing for things like edge cases and testing APIs.
+Unit testing is the fundamental building block of frontend testing. It analyzes individual **methods** and **functions** to ensure they’re working as expected. This is crucial for any frontend application, testing your components and features against how you expect them to behave in production, leading to a stable codebase and a reliable app for your customers. You can also use unit testing for things like edge cases and testing APIs.
+
+The amount of unit tests depend on goal and testing strategy
 
 Unit test is something when we instantiate the class on our own inside our test we're calling new class that we pass on the mocked version of dependencies and we test the class itself. No DOM interaction and no testbed(Angular), just basic individual units or functions in isolation, focusing on a small part of the code.
 
@@ -57,6 +61,7 @@ Characteristics:
 
 ### Component Test
 
+Test of complete section of the application.
 Component test has a testbed(Angular), the DOM interaction, focuses on testing individual components (often UI components or logical groupings of code) and their interactions with other components or dependencies ensuring component behaves as expected when iteracting with surounded components or services.
 
 Example:
@@ -91,6 +96,8 @@ Mostly all reasons happen because of the need to handle manually processing whic
 
 #### Component testing vs End-to-End component testing
 
+[More testing types and component vs e2e testing](https://docs.cypress.io/app/core-concepts/testing-types)
+
 Testing of components can be done in conventional way either using native methods or 3rd party libraries or with E2E tool like Cypress.
 
 Component Tests:
@@ -104,7 +111,7 @@ Component Tests:
 * Requires to manage change detection
 * Requires to simulate DOM interaction
 
-Component Tests with E2E
+Component Tests with E2E tool
 
 - Can be tested in isolation
 - We have precision & control

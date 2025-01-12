@@ -6,7 +6,17 @@ Docs everything for e2e testing.
 
 [Cypress Real World App](https://github.com/av3000/cypress-realworld-app/blob/develop/cypress.config.ts)
 
+[Organizing, Testing, Logging in and Controlling state](https://docs.cypress.io/app/core-concepts/best-practices#Organizing-Tests-Logging-In-Controlling-State)
+
 [Best practices](https://docs.cypress.io/app/core-concepts/best-practices?utm_source=Binary%3A+App&utm_medium=Docs+Menu&utm_content=Best+Practices)
+
+[When to stub or use real API for requests](https://docs.cypress.io/app/guides/network-requests#Use-Server-Responses)
+
+[What is end-to-end testing](https://circleci.com/blog/what-is-end-to-end-testing/)
+
+[Behavior driven development - cypress with cucumber](https://testgrid.io/blog/cypress-with-cucumber/)
+
+### E2E Test
 
 ### Component Testing with Cypress
 
