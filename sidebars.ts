@@ -138,7 +138,14 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Architecture",
-          items: ["system-design/architecture/index"],
+          items: [
+            "system-design/architecture/index",
+            {
+              type: "category",
+              label: "The Clean Architecture",
+              items: ["system-design/architecture/clean-architecture/index"],
+            },
+          ],
         },
         {
           type: "category",
