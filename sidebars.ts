@@ -51,7 +51,14 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Styling",
-          items: ["frontend/styling/index"],
+          items: [
+            "frontend/styling/index",
+            {
+              type: "category",
+              label: "Architecture",
+              items: ["frontend/styling/architecture/itcss"],
+            },
+          ],
         },
         {
           type: "category",
