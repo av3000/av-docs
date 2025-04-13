@@ -3,6 +3,93 @@ sidebar_label: "Intro"
 sidebar_position: 1
 ---
 
+Great, lets move on to frameworks component based, create the introduction as always, explaining what role in frontend plays the component based libraries (we could use a diagram where we can differentiate the headless UI behaviours, css styling, prestyled, i think it should be generally talked about in frameworks index document) first cover the bootstrap, bulma, material ui, semantic ui. Further on there will be Ark UI, Radix, Shadcn, mantine, base ui, neobrutalism components that will need to fit somewhere.
+
+layout working on:
+styling/
+├── index.md
+├── architecture/
+│ ├── index.md
+│ ├── bem.md
+│ ├── itcss.md
+│ ├── oocss.md
+│ ├── smacss.md
+│ ├── atomic-css.md
+│ └── css-modules.md
+├── preprocessors/
+│ ├── index.md
+│ ├── sass.md
+│ ├── scss.md
+│ ├── less.md
+│ ├── stylus.md
+│ └── postcss.md
+├── frameworks/
+│ ├── index.md
+│ ├── utility-first/
+│ │ ├── index.md
+│ │ ├── tailwind.md
+│ │ ├── tachyons.md
+│ │ └── windi-css.md
+│ ├── component-based/
+│ │ ├── index.md
+│ │ ├── bootstrap.md
+│ │ ├── bulma.md
+│ │ ├── material-ui.md
+│ │ └── semantic-ui.md
+│ └── css-in-js/
+│ ├── index.md
+│ ├── styled-components.md
+│ ├── emotion.md
+│ ├── jss.md
+│ └── stitches.md
+├── responsive-design/
+│ ├── index.md
+│ ├── media-queries.md
+│ ├── mobile-first.md
+│ ├── container-queries.md
+│ └── viewport-units.md
+├── animations/
+│ ├── index.md
+│ ├── keyframes.md
+│ ├── transitions.md
+│ ├── transforms.md
+│ └── libraries/
+│ ├── gsap.md
+│ ├── framer-motion.md
+│ └── animate-css.md
+├── layout/
+│ ├── index.md
+│ ├── flexbox.md
+│ ├── grid.md
+│ ├── positioning.md
+│ └── multi-column.md
+├── typography/
+│ ├── index.md
+│ ├── web-fonts.md
+│ ├── variable-fonts.md
+│ ├── font-metrics.md
+│ └── text-effects.md
+├── colors/
+│ ├── index.md
+│ ├── color-theory.md
+│ ├── color-systems.md
+│ ├── color-functions.md
+│ └── themes-and-modes.md
+├── best-practices/
+│ ├── index.md
+│ ├── organization.md
+│ ├── naming-conventions.md
+│ ├── maintainability.md
+│ ├── performance.md
+│ └── accessibility.md
+└── advanced/
+├── index.md
+├── custom-properties.md
+├── houdini.md
+├── selectors.md
+├── container-style-queries.md
+└── future-specs.md
+
 # Styling
 
 In modern web development, creating scalable and modular CSS is essential for maintaining large codebases and ensuring that styles are manageable, reusable, and maintainable. This involves adopting methodologies and using tools that promote organized and efficient CSS code.
