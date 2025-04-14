@@ -3,8 +3,6 @@ sidebar_label: "Intro"
 sidebar_position: 1
 ---
 
-Great, lets move on to frameworks component based, create the introduction as always, explaining what role in frontend plays the component based libraries (we could use a diagram where we can differentiate the headless UI behaviours, css styling, prestyled, i think it should be generally talked about in frameworks index document) first cover the bootstrap, bulma, material ui, semantic ui. Further on there will be Ark UI, Radix, Shadcn, mantine, base ui, neobrutalism components that will need to fit somewhere.
-
 layout working on:
 styling/
 ├── index.md
