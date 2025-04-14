@@ -32,7 +32,6 @@ Fully styled components with pre-determined aesthetics:
 
 - [Bootstrap](./bootstrap.md): The most popular HTML/CSS/JS framework
 - [Bulma](./bulma.md): Modern CSS framework based on Flexbox
-- [Semantic UI](./semantic-ui.md): UI framework with human-friendly HTML
 - [Ant Design](./antdesign.md): Enterprise-focused UI system by Alibaba
 - [PrimeNG/PrimeReact/PrimeVue](./primeng.md): Comprehensive UI component suite
 
@@ -42,21 +41,20 @@ Comprehensive libraries implementing specific design languages:
 
 - [Material UI](./material-ui.md): React components implementing Google's Material Design
 - [Mantine](./mantine.md): React components with modern design and great DX
-- [Chakra UI](./chakra-ui.md): Accessible React components focused on developer experience
 
 ### Styling Libraries with Components
 
 Component collections built on styling systems:
 
 - [shadcn/ui](./shadcn-ui.md): Re-usable components built with Radix UI and Tailwind CSS
-- [Park UI](./park-ui.md): Framework-agnostic components built with Ark UI
+- [Park UI](./parkui.md): Framework-agnostic components built with Ark UI
 
 ### Behavior Libraries (Headless UI)
 
 Unstyled components providing functionality and accessibility:
 
-- [Radix UI](./radix-ui.md): Unstyled, accessible components for React
-- [Ark UI](./ark-ui.md): Framework-agnostic headless UI components
+- [Radix UI](./radixui.md): Unstyled, accessible components for React
+- [Ark UI](./arkui.md): Framework-agnostic headless UI components
 - [React Aria](./react-aria.md): Hook-based accessible UI primitives
 
 ## Key Considerations for Choosing a Component Library

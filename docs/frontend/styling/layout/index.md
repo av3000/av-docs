@@ -14,9 +14,9 @@ CSS layout is the foundation of web design, determining how elements are positio
 ### Modern Layout Methods
 
 - **[Flexbox](./flexbox.md)**: One-dimensional layout method for arranging items in rows or columns
-- **[Grid](./grid.md)**: Two-dimensional layout system for more complex designs
-- **[Positioning](./positioning.md)**: Advanced techniques for precise control over element placement
-- **[Multi-column Layout](./multi-column.md)**: Newspaper-style column layouts
+- **Grid**: Two-dimensional layout system for more complex designs
+- **Positioning**: Advanced techniques for precise control over element placement
+- **Multi-column Layout**: Newspaper-style column layouts
 
 ## Choosing the Right Layout Method
 

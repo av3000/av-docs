@@ -6,7 +6,9 @@ CSS frameworks are pre-written, standardized code packages designed to facilitat
 
 Modern CSS frameworks can be categorized into several distinct approaches, each with its own philosophy and use cases:
 
-### [Utility-First Frameworks](./utility-first/)
+### Utility-First Frameworks
+
+<!-- (./utility-first/) -->
 
 Utility-first frameworks provide atomic, single-purpose CSS classes that can be composed to build any design. Rather than pre-designed components, they focus on providing building blocks.
 
@@ -16,7 +18,7 @@ Examples:
 - [Tachyons](./utility-first/tachyons.md)
 - [Windi CSS](./utility-first/windi-css.md)
 
-### [Component-Based Frameworks](./component-based/)
+### [Component-Based Frameworks](./component-based/index.md)
 
 Component-based frameworks offer pre-designed UI components with ready-to-use styling. They typically provide a complete design system with consistent styling across elements.
 
@@ -25,18 +27,17 @@ Examples:
 - [Bootstrap](./component-based/bootstrap.md)
 - [Bulma](./component-based/bulma.md)
 - [Material UI](./component-based/material-ui.md)
-- [Semantic UI](./component-based/semantic-ui.md)
 
-### [CSS-in-JS Libraries](./css-in-js/)
+### [CSS-in-JS Libraries](./css-in-js/index.md)
 
 CSS-in-JS approaches allow you to write CSS directly in your JavaScript files, providing scoping, dynamic styling, and better integration with component-based architectures.
 
 Examples:
 
-- [Styled Components](./css-in-js/styled-components.md)
-- [Emotion](./css-in-js/emotion.md)
-- [JSS](./css-in-js/jss.md)
-- [Stitches](./css-in-js/stitches.md)
+- [Styled Components]
+- [Emotion]
+- [JSS]
+- [Stitches]
 
 ## Choosing a Framework
 

@@ -61,7 +61,9 @@ Apply different styles based on device characteristics:
 
 ## Approaches to Responsive Design
 
-### [Mobile-First](./mobile-first.md)
+### Mobile-First
+
+<!-- (./mobile-first.md) -->
 
 Start by designing for small screens and then progressively enhance for larger screens:
 
@@ -114,7 +116,9 @@ Benefits:
 
 ## Media Queries
 
-### [Media Query Basics](./media-queries.md)
+### Media Query Basics
+
+<!-- (./media-queries.md) -->
 
 Media queries allow you to apply styles based on the device characteristics:
 
@@ -173,7 +177,9 @@ While breakpoints should be based on your content, common ranges include:
 
 ## Advanced Responsive Techniques
 
-### [Container Queries](./container-queries.md)
+### Container Queries
+
+<!-- (./container-queries.md) -->
 
 Style elements based on the size of their container, not just the viewport:
 
@@ -189,7 +195,9 @@ Style elements based on the size of their container, not just the viewport:
 }
 ```
 
-### [Viewport Units](./viewport-units.md)
+### Viewport Units
+
+<!-- (./viewport-units.md) -->
 
 Size elements relative to the viewport:
 

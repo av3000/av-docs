@@ -255,7 +255,9 @@ const CardContent = styled.div`
 
 ## Popular CSS-in-JS Libraries
 
-### [Styled Components](./styled-components.md)
+### Styled Components
+
+<!-- (./styled-components.md) -->
 
 A popular library that uses tagged template literals to style components:
 
@@ -326,7 +328,9 @@ function Component() {
 }
 ````
 
-### [JSS](./jss.md)
+### JSS
+
+<!-- (./jss.md) -->
 
 A more object-oriented approach to defining styles:
 
@@ -366,7 +370,9 @@ function Component() {
 }
 ```
 
-### [Stitches](./stitches.md)
+### Stitches
+
+<!-- (./stitches.md) -->
 
 A CSS-in-JS library with a focus on performance and developer experience:
 

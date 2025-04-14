@@ -4,7 +4,7 @@ Park UI is a modern, open-source component library that combines the accessibili
 
 ## What is Park UI?
 
-Park UI is a collection of accessible, customizable UI components built on top of [Ark UI](./ark-ui.md). It provides ready-to-use components with preset styling while maintaining the flexibility to use different styling systems. Park UI supports multiple styling approaches including:
+Park UI is a collection of accessible, customizable UI components built on top of [Ark UI](./arkui.md). It provides ready-to-use components with preset styling while maintaining the flexibility to use different styling systems. Park UI supports multiple styling approaches including:
 
 - Panda CSS (CSS-in-JS)
 - Tailwind CSS (Utility-first CSS)

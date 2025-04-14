@@ -4,7 +4,9 @@ Creating maintainable, scalable, and efficient CSS requires following establishe
 
 ## Organization
 
-### [File Organization](./organization.md)
+### File Organization
+
+<!-- (./organization.md) -->
 
 Structure your CSS files logically to enhance maintainability:
 
@@ -63,7 +65,9 @@ Organize properties consistently within rule sets:
 
 Add meaningful comments to explain complex code or hacks.
 
-## [Naming Conventions](./naming-conventions.md)
+## Naming Conventions
+
+<!-- (./naming-conventions.md) -->
 
 ### Class Naming
 
@@ -124,7 +128,9 @@ Choose a naming convention and apply it consistently:
 
 5. **Use hyphens as separators**: For multi-word class names (e.g., `.user-profile`)
 
-## [Maintainability](./maintainability.md)
+## Maintainability
+
+<!-- (./maintainability.md) -->
 
 ### DRY (Don't Repeat Yourself)
 
@@ -219,7 +225,9 @@ $breakpoints: (
 }
 ```
 
-## [Performance](./performance.md)
+## Performance
+
+<!-- (./performance.md) -->
 
 ### Selector Efficiency
 
@@ -291,7 +299,9 @@ Reduce unnecessary code:
 - Minify CSS for production
 - Consider code splitting for large applications
 
-## [Accessibility](./accessibility.md)
+## Accessibility
+
+<!-- (./accessibility.md) -->
 
 ### Color and Contrast
 
