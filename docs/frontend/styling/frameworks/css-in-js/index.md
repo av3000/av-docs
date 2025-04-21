@@ -1,4 +1,4 @@
-## Implementation Approaches
+# Implementation Approaches
 
 ### Runtime Styling
 

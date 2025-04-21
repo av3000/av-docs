@@ -18,7 +18,7 @@ CSS preprocessors offer several advantages over writing plain CSS:
 
 This section covers the most widely-used CSS preprocessors:
 
-### [Sass/SCSS](./scss.md)
+### [Sass/SCSS](./sass.md)
 
 The most mature and feature-rich preprocessor, with two syntaxes: the original indented syntax (Sass) and the newer SCSS syntax that's closer to CSS.
 
