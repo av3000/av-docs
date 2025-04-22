@@ -122,3 +122,69 @@ Task runners like Gulp and Grunt are primarily maintained for legacy projects, w
 - **Legacy Maintenance**: Only maintain Gulp/Grunt if migration costs outweigh benefits
 
 Build tooling should prioritize developer experience, build performance, and output optimization—areas where modern bundlers excel compared to traditional task runners.
+
+## TODO: finish documenting the following structure
+
+/devops/
+├── patterns/
+│ ├── ci-cd.md
+│ ├── infrastructure-as-code.md
+│ ├── gitops.md
+│ └── site-reliability-engineering.md
+└── tools/
+├── build-automation/
+│ ├── index.md # Overview of build automation tools
+│ ├── task-runners/ # Task runner section
+│ │ ├── index.md # Task runners overview
+│ │ ├── gulp.md # Gulp documentation
+│ │ └── grunt.md # Grunt documentation
+│ ├── module-bundlers/ # Bundlers section
+│ │ ├── index.md # Bundlers overview
+│ │ ├── webpack.md # Webpack documentation
+│ │ ├── vite.md # Vite documentation
+│ │ ├── rollup.md # Rollup documentation
+│ │ └── parcel.md # Parcel documentation
+│ ├── transpilers/ # Transpilers section
+│ │ ├── index.md # Transpilers overview
+│ │ ├── babel.md # Babel documentation
+│ │ ├── typescript-compiler.md # TypeScript compiler
+│ │ ├── swc.md # SWC documentation
+│ │ └── esbuild.md # esbuild documentation (also a bundler)
+│ └── monorepo-tools/ # Monorepo tools section
+│ ├── index.md # Monorepo tools overview
+│ ├── nx.md # Nx documentation
+│ ├── turborepo.md # Turborepo documentation
+│ ├── lerna.md # Lerna documentation
+│ └── rush.md # Rush documentation
+├── ci-cd-platforms/
+│ ├── jenkins.md # Jenkins automation server
+│ ├── github-actions.md # GitHub's CI/CD platform
+│ ├── gitlab-ci.md # GitLab's CI/CD platform
+│ ├── circle-ci.md # CircleCI platform
+│ ├── travis-ci.md # Travis CI platform
+│ ├── azure-devops.md # Microsoft's Azure DevOps
+│ ├── teamcity.md # JetBrains TeamCity
+│ └── buildkite.md # Buildkite platform
+├── containerization/
+│ ├── docker.md # Docker containerization
+│ ├── kubernetes.md # Kubernetes orchestration
+│ ├── openshift.md # Red Hat OpenShift platform
+│ ├── docker-compose.md # Docker Compose tool
+│ └── podman.md # Podman container engine
+├── infrastructure-as-code/
+│ ├── terraform.md # HashiCorp Terraform
+│ ├── cloudformation.md # AWS CloudFormation
+│ ├── ansible.md # Ansible automation
+│ ├── puppet.md # Puppet configuration management
+│ └── pulumi.md # Pulumi IaC platform
+├── monitoring-observability/
+│ ├── prometheus.md # Prometheus monitoring
+│ ├── grafana.md # Grafana visualization
+│ ├── datadog.md # Datadog monitoring platform
+│ ├── new-relic.md # New Relic observability platform
+│ └── elastic-stack.md # Elasticsearch, Logstash, Kibana
+└── artifact-management/
+├── artifactory.md # JFrog Artifactory
+├── nexus.md # Sonatype Nexus
+├── github-packages.md # GitHub Packages
+└── docker-registry.md # Docker registry
