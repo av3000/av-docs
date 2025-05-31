@@ -4,7 +4,7 @@ Responsive web design (RWD) is an approach to web design that makes websites ren
 
 ## Examples
 
-[Product list of various size images unified with aspect ratio](pathname:///examples/responsive-design/product-list-page/responsive-product-list-page.html)
+[Responsive Product List with grid, splashes, aspect ratio images](/av-docs/examples/responsive-design/)
 
 ## Core Principles
 
