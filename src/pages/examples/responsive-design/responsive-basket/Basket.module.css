@@ -1,0 +1,241 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.basketGrid {
+  display: grid;
+  grid-template-columns: 40px 80px 1fr 120px 150px 40px 100px 120px 120px;
+  gap: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerRow {
+  display: contents;
+}
+
+.header {
+  padding: 16px 12px;
+  background: #f5f5f5;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.emptyHeader {
+  background: #f5f5f5;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.itemRow {
+  display: contents;
+}
+
+.itemRow > div {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+}
+
+.removeCell {
+  justify-content: center;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.removeButton:hover {
+  color: #d32f2f;
+}
+
+.imageCell {
+  padding: 8px;
+}
+
+.productImage {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.nameCell {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.productName {
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.productCode {
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+}
+
+.sizeCell {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.editLink {
+  background: none;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 13px;
+  padding: 0;
+}
+
+.sizeSelect {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.emptyCell {
+  /* Empty column */
+}
+
+.priceCell {
+  font-size: 14px;
+}
+
+.quantityCell {
+  justify-content: center;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quantityButton {
+  background: #f5f5f5;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.quantityButton:hover:not(:disabled) {
+  background: #e0e0e0;
+}
+
+.quantityButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantityInput {
+  width: 40px;
+  height: 32px;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+
+.totalCell {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.totalPrice {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.messageButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.centerAlign {
+  text-align: center;
+  justify-content: center;
+}
+
+.rightAlign {
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.validationRow {
+  display: contents;
+}
+
+.validationMessage {
+  padding: 12px;
+  background: #fff3e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.warningText {
+  color: #d32f2f;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .basketGrid {
+    grid-template-columns: 30px 60px 1fr 100px 120px 30px 80px 100px 100px;
+  }
+
+  .productImage {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .basketGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .headerRow {
+    display: none;
+  }
+
+  .itemRow {
+    display: block;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .itemRow > div {
+    border: none;
+    padding: 8px 0;
+  }
+}
