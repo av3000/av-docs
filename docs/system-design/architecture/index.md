@@ -5,7 +5,7 @@ Move these to separate folders and document.
 1. Clean Code.
 2. SOLID Principles.
 3. Clean Architecture.
-4. Domain-Driven Design (DDD).
+4. Domain-Driven Design (DDD). [video on DDD](https://youtu.be/o-ym035R1eY?si=a4U2h8maRCPvWe8z)
 5. Test-Driven Development (TDD).
 6. Continuous Integration & Continuous Delivery (CI/CD).
 

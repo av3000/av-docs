@@ -32,6 +32,13 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  algorithmsAndDs: [
+    {
+      type: "category",
+      label: "Algorithms & DS",
+      items: ["algorithms/index"],
+    },
+  ],
   frontendSidebar: [
     {
       type: "category",

@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms & DS
 
 Important algorithms used in software development.
 
@@ -6,7 +6,7 @@ Important algorithms used in software development.
 
 ### Basics of Big O Notation - Complexity
 
-Big O notation is just a start, in real-world performance can differ based on factors like caching, memory usage and hardware specification, for example maximizing cache hits with modern CPU can sometimes be more impactful that reducing algorithm complexity.
+[Big O notation](./big-o-complexity/index.md) is just a start, in real-world performance can differ based on factors like caching, memory usage and hardware specification, for example maximizing cache hits with modern CPU can sometimes be more impactful that reducing algorithm complexity.
 
 2 Examples:
 
