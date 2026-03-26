@@ -29,6 +29,9 @@ Treat skills as reusable instruction units, Agent Skills and `skills.sh` as the 
 - Start with [Codex Setup](./setup/codex.md) if Codex is your main agent
 - Read [Claude Code Setup](./setup/claude-code.md) for the marketplace and activation differences
 - Read [GitHub Copilot Setup](./setup/github-copilot.md) for skills and custom-instruction customization paths
+- Read [Superpowers](./libraries/superpowers.md) for the opinionated workflow layer
+- Read [Agent Skills And skills.sh](./libraries/agent-skills-and-skills-sh.md) for the portability layer
+- Read [anthropics/skills](./libraries/anthropic-skills.md) as a reference/examples source
 
 ## Source References
 

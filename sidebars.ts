@@ -47,6 +47,14 @@ const sidebars: SidebarsConfig = {
         "ai/index",
         {
           type: "category",
+          label: "Concepts",
+          items: [
+            "ai/concepts/core-concepts",
+            "ai/concepts/superpowers-vs-agent-skills",
+          ],
+        },
+        {
+          type: "category",
           label: "Setup",
           items: [
             "ai/setup/codex",
@@ -56,10 +64,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "category",
-          label: "Concepts",
+          label: "Libraries",
           items: [
-            "ai/concepts/core-concepts",
-            "ai/concepts/superpowers-vs-agent-skills",
+            "ai/libraries/superpowers",
+            "ai/libraries/agent-skills-and-skills-sh",
+            "ai/libraries/anthropic-skills",
           ],
         },
       ],
