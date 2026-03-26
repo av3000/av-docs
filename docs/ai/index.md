@@ -26,9 +26,9 @@ Treat skills as reusable instruction units, Agent Skills and `skills.sh` as the 
 
 ## Start Here
 
-- Read [Core Concepts](./concepts/core-concepts.md) if you need the shared vocabulary first
-- Read [Superpowers Vs Agent Skills](./concepts/superpowers-vs-agent-skills.md) to understand how the ecosystem fits together
-- Next: use the daily command combos page for copy-paste prompts when it lands
+- Start with [Codex Setup](./setup/codex.md) if Codex is your main agent
+- Read [Claude Code Setup](./setup/claude-code.md) for the marketplace and activation differences
+- Read [GitHub Copilot Setup](./setup/github-copilot.md) for skills and custom-instruction customization paths
 
 ## Source References
 

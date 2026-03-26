@@ -47,6 +47,15 @@ const sidebars: SidebarsConfig = {
         "ai/index",
         {
           type: "category",
+          label: "Setup",
+          items: [
+            "ai/setup/codex",
+            "ai/setup/claude-code",
+            "ai/setup/github-copilot",
+          ],
+        },
+        {
+          type: "category",
           label: "Concepts",
           items: [
             "ai/concepts/core-concepts",
