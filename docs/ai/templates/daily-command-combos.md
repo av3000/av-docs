@@ -35,6 +35,7 @@ Use using-superpowers, then brainstorming, and help me turn this feature idea in
 
 ```bash
 git status --short
+npm run typecheck
 ```
 
 ## Turn A Rough Idea Into A Spec
@@ -97,7 +98,7 @@ Review this change like a code reviewer. Focus on bugs, regressions, risks, and 
 
 ```bash
 git diff --stat
-git diff -- docs/ai sidebars.ts
+git diff -- docs/ai sidebars.ts docusaurus.config.ts
 ```
 
 ## Verify A Fix Before Completion
@@ -138,7 +139,7 @@ Use vercel-react-best-practices and review this React component for rendering be
 ### Optional Command Support
 
 ```bash
-rg -n "useEffect|useMemo|useCallback" src docs
+rg -n "React|useEffect|useMemo|useCallback" src docs
 ```
 
 ## Compare A Broad Workflow With A Narrow Skill

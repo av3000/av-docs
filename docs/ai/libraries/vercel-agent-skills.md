@@ -26,10 +26,9 @@ Think of the stack this way:
 
 That makes Vercel skills useful when the question is narrow: is this component rendering efficiently, is this UI pattern sound, or does this page need a framework-specific guardrail?
 
-## Good Fits
+## Practical Uses
 
 - `vercel-react-best-practices` for React rendering, data flow, and performance checks
-- `web-design-guidelines` for broader UI quality and design-system discipline
 - framework-specific review when you want a targeted second opinion without switching into a full process model
 
 ## What This Is Not
@@ -38,9 +37,11 @@ That makes Vercel skills useful when the question is narrow: is this component r
 - not a replacement for `brainstorming`, `writing-plans`, or verification
 - not a license to turn one skill into a general-purpose agent workflow
 
-## How To Use It Well
+## How It Fits With Superpowers
 
-Keep the prompt pointed at the exact issue you want reviewed. For example, ask for a React component review, a UI guardrail pass, or a performance check, then let `superpowers` handle the larger project flow around it.
+- use `superpowers` to control the overall process
+- use Vercel skills when the task narrows to a framework-specific implementation concern
+- keep the prompt pointed at the exact issue you want reviewed, then return to the broader workflow for planning and verification
 
 ## Source References
 
