@@ -1,30 +1,38 @@
 ---
-title: Superpowers Vs Agent Skills
+title: Superpowers vs. Agent Skills
 ---
 
-# Superpowers Vs Agent Skills
+# Superpowers vs. Agent Skills
 
 ## What This Page Is For
 
-Explain how the main upstream sources fit together instead of treating them as competing products.
+Compare the skill packaging layer with the workflow layer so you can tell which problem each one solves.
 
 ## When To Use This
 
-Use this when you want to understand whether you need a portable skill, a skill library, or a full workflow system.
+Use this when you are choosing between a portable reusable skill, a skill library, or an end-to-end engineering workflow.
 
 ## If You Only Remember One Thing
 
-`superpowers` tells you how to work; Agent Skills and `skills.sh` help define and distribute the reusable skill units that workflows build on top of.
+Agent Skills and `skills.sh` answer, "How do I package and move reusable skills between agents?" `superpowers` answers, "How do I run a disciplined engineering process with those skills?"
 
-## The Relationship
+## What Each One Solves
 
-- **Agent Skills / `skills.sh`**: portability and packaging layer
-- **`anthropics/skills`**: reference examples and conventions
-- **`superpowers`**: opinionated process layer
-- **Vercel agent skills**: practical, targeted skill pack
+| Layer | Solves this problem | Does not solve this problem |
+| --- | --- | --- |
+| Agent Skills / `skills.sh` | Package a skill so it can be installed, shared, and reused across agents | Define the full workflow an agent should follow in a project |
+| `superpowers` | Turn a set of skills into a repeatable workflow for brainstorming, planning, implementation, review, and verification | Provide a portability standard for moving skills between different agent ecosystems |
+| `anthropics/skills` | Offer reference conventions and examples | Give you an opinionated delivery workflow |
+| Vercel agent skills | Provide narrow, practical task guidance | Serve as a general packaging standard or process framework |
 
-## How To Choose
+## Concrete Scenarios
 
-- Use Agent Skills concepts when you care about portability
-- Use `superpowers` when you want an end-to-end engineering workflow
-- Use Vercel skills when you want narrow task-specific guidance
+If you want to move one reusable debugging skill from one agent to another, Agent Skills is the relevant layer. It focuses on packaging and installation, not on telling the agent how to run the project.
+
+If you want the agent to brainstorm first, write a plan, implement in small steps, and verify before claiming success, `superpowers` is the relevant layer. It is the process wrapper around the reusable skills.
+
+If you only need a targeted skill for one common engineering task, Vercel-style agent skills are the better fit. They are narrow and practical, but they do not try to define the whole workflow around them.
+
+## Where Copilot Fits
+
+This page compares the skill and workflow ecosystem only. GitHub Copilot customization docs are a separate agent-native customization layer, so they belong beside this taxonomy rather than inside the `superpowers` versus Agent Skills comparison.
