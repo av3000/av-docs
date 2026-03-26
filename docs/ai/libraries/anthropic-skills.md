@@ -28,6 +28,8 @@ Use the repository to study patterns, then map those patterns to your own agent,
 
 That is the useful part of a reference library: it shortens the distance between "I need a skill" and "I know what shape that skill should have".
 
+For this handbook, the Codex-first move is to copy the shape of a good skill, then rewrite the activation and install notes for the agent you are actually using.
+
 ## What This Is Not
 
 - not the whole ecosystem

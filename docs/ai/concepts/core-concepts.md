@@ -34,7 +34,16 @@ A higher-level system that sequences multiple skills into a development process.
 
 The local install path, marketplace flow, or tool configuration that makes a skill available in a particular agent.
 
+### Trigger Behavior
+
+The rule that decides whether the agent loads a skill automatically, requires you to name it, or needs a tool-specific command to refresh or activate it.
+
+### Portable Format
+
+The conventions that let one skill idea be packaged and reused across more than one agent, even when the install path or activation flow differs.
+
 ## Stable Concepts Versus Fast-Moving Details
 
 - Keep local docs for the stable concepts
 - Link upstream for install commands and platform-specific changes
+- Treat install locations and CLI commands as per-agent details, not as part of the core definition

@@ -20,6 +20,8 @@ Claude Code uses the marketplace or plugin flow, so install Superpowers there an
 
 Get Claude Code configured so Superpowers skills activate predictably without duplicating the Codex-specific local setup.
 
+Read this as a delta from the Codex page, not as a separate handbook track.
+
 ## Prerequisites
 
 - Claude Code installed and working

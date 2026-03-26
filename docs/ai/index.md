@@ -6,7 +6,7 @@ title: AI Skills
 
 ## What This Page Is For
 
-This is the orientation page for the AI Skills handbook shell. It points to the workflow and reference material that will be expanded across the rest of the section, with Codex as the primary example and focused notes for Claude Code and GitHub Copilot where they differ.
+This is the orientation page for the AI Skills handbook. It tells you what each layer of the ecosystem does and where to start, with Codex as the default reference point and short notes for Claude Code and GitHub Copilot only where the workflow changes.
 
 ## When To Use This
 
@@ -26,17 +26,13 @@ Treat skills as reusable instruction units, Agent Skills and `skills.sh` as the 
 
 ## Start Here
 
-- Start with [Codex Setup](./setup/codex.md) if Codex is your main agent
-- Read [Claude Code Setup](./setup/claude-code.md) for the marketplace and activation differences
-- Read [GitHub Copilot Setup](./setup/github-copilot.md) for skills and custom-instruction customization paths
-- Read [Superpowers](./libraries/superpowers.md) for the opinionated workflow layer
-- Read [Agent Skills And skills.sh](./libraries/agent-skills-and-skills-sh.md) for the portability layer
-- Read [anthropics/skills](./libraries/anthropic-skills.md) as a reference/examples source
-- Read [Vercel Agent Skills](./libraries/vercel-agent-skills.md) for targeted React, UI, and guardrail checks
-- Use [Daily Command Combos](./templates/daily-command-combos.md) for copy-paste prompt recipes
+- `Setup`: start with [Codex Setup](./setup/codex.md), then read [Claude Code Setup](./setup/claude-code.md) or [GitHub Copilot Setup](./setup/github-copilot.md) only if your tool differs from the Codex baseline.
+- `Core Workflow`: read [Core Concepts](./concepts/core-concepts.md), [Superpowers vs. Agent Skills](./concepts/superpowers-vs-agent-skills.md), [Superpowers](./libraries/superpowers.md), [Agent Skills And skills.sh](./libraries/agent-skills-and-skills-sh.md), [anthropics/skills](./libraries/anthropic-skills.md), and [Vercel Agent Skills](./libraries/vercel-agent-skills.md) to understand the layers before you start applying them.
+- `Daily Templates`: use [Daily Command Combos](./templates/daily-command-combos.md) when you already understand the model and just need copy-paste prompts fast.
 
 ## Source References
 
+- Use these for fast-moving install details and product-specific updates.
 - [skills.sh FAQ](https://skills.sh/docs/faq)
 - [anthropics/skills](https://github.com/anthropics/skills)
 - [obra/superpowers](https://github.com/obra/superpowers)

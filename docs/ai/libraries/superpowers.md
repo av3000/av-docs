@@ -39,6 +39,10 @@ If you are adding a new UI, the sequence should look like this:
 
 That is the difference between a useful workflow system and a pile of unrelated prompts.
 
+## When Not To Reach For It
+
+Do not use `superpowers` as an excuse to over-process a trivial question. The value is in preserving the sequence when the work has ambiguity, risk, or multiple steps.
+
 ## What Superpowers Is Not
 
 - not just a bag of prompts

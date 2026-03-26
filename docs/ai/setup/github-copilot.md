@@ -20,6 +20,8 @@ For this handbook, Copilot matters where it supports reusable skills, repository
 
 Get Copilot configured so repository-level or personal customizations can support the same practical workflows.
 
+This page only covers the customization surface that materially affects skills-oriented work. It is not meant to replace the general Copilot docs.
+
 ## Prerequisites
 
 - GitHub Copilot available in the target environment
@@ -56,6 +58,8 @@ The Copilot CLI commands documented by GitHub are:
 - custom instructions
 - repository versus personal configuration locations
 - nearest-file precedence for agent instructions
+
+If you are not using Copilot skills, custom instructions, or `AGENTS.md`, you can skip this page.
 
 ## Verification
 

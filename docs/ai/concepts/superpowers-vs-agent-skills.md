@@ -33,6 +33,14 @@ If you want the agent to brainstorm first, write a plan, implement in small step
 
 If you only need a targeted skill for one common engineering task, Vercel-style agent skills are the better fit. They are narrow and practical, but they do not try to define the whole workflow around them.
 
+## Default Choice
+
+Start by asking which problem you are solving:
+
+- if the problem is process discipline, reach for `superpowers`
+- if the problem is packaging or reuse across agents, reach for Agent Skills and `skills.sh`
+- if the problem is one narrow framework or review concern, reach for a targeted skill pack such as Vercel's
+
 ## Where Copilot Fits
 
 This page compares the skill and workflow ecosystem only. GitHub Copilot customization docs are a separate agent-native customization layer, so they belong beside this taxonomy rather than inside the `superpowers` versus Agent Skills comparison.

@@ -31,6 +31,8 @@ That makes Vercel skills useful when the question is narrow: is this component r
 - `vercel-react-best-practices` for React rendering, data flow, and performance checks
 - framework-specific review when you want a targeted second opinion without switching into a full process model
 
+In Codex-first use, that usually means invoking the targeted skill inside a broader workflow that already decided the scope and verification steps.
+
 ## What This Is Not
 
 - not a full methodology for planning and execution

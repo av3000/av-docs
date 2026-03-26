@@ -28,6 +28,8 @@ In day-to-day use, this matters because you usually want two things at once: a s
 
 That means the handbook can talk about a debugging skill, a planning skill, or a workflow skill without having to redesign the packaging story every time.
 
+The practical question is simple: can you keep the capability stable while swapping the installation mechanics per tool? If yes, you are using the portability layer correctly.
+
 ## What This Is Not
 
 - not a full engineering methodology
@@ -36,5 +38,6 @@ That means the handbook can talk about a debugging skill, a planning skill, or a
 
 ## Source References
 
+- Use the FAQ when you need the current packaging or installation details.
 - [skills.sh FAQ](https://skills.sh/docs/faq)
 - [GitHub Copilot agent skills docs](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills)

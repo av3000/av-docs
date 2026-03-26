@@ -20,6 +20,8 @@ Codex discovers skills locally from `~/.agents/skills`, so make the Superpowers 
 
 Get Codex into a state where Superpowers skills are discoverable, reloadable, and easy to trigger by name.
 
+This is the default setup path for the rest of the handbook. The Claude Code and Copilot pages only cover the parts that differ from this baseline.
+
 ## Prerequisites
 
 - Codex installed and working locally
