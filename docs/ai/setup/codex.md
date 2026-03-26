@@ -26,17 +26,17 @@ Get Codex into a state where Superpowers skills are discoverable, reloadable, an
 - Git installed
 - access to the `obra/superpowers` repository or a local clone of it
 
-## Quick Install
+## Install Path Or Command
 
-Tell Codex to run the Superpowers install instructions:
+The upstream Codex guide documents the current local layout and install flow: [Superpowers for Codex](https://github.com/obra/superpowers/blob/main/docs/README.codex.md).
+
+The quick-install prompt sets up the local clone and the skills link so Codex can discover Superpowers automatically:
 
 ```text
 Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md
 ```
 
-## Manual Install
-
-If you want to install it yourself, use the local Codex layout documented in `C:\Users\alana\.codex\superpowers\docs\README.codex.md`:
+If you want to install it yourself, use the documented local layout:
 
 ```bash
 git clone https://github.com/obra/superpowers.git ~/.codex/superpowers
@@ -51,6 +51,8 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
 cmd /c mklink /J "$env:USERPROFILE\.agents\skills\superpowers" "$env:USERPROFILE\.codex\superpowers\skills"
 ```
 
+Restart Codex after creating or updating the link.
+
 If you use Codex subagent skills such as `dispatching-parallel-agents` or `subagent-driven-development`, enable multi-agent support in the Codex config:
 
 ```toml
@@ -58,24 +60,18 @@ If you use Codex subagent skills such as `dispatching-parallel-agents` or `subag
 multi_agent = true
 ```
 
-Restart Codex after creating or updating the link.
-
 ## Typical Usage Pattern
 
 - name the skill explicitly before action, for example `use brainstorming`
 - keep prompts task-oriented and short
 - let the skill shape the process when the workflow is rigid
 
-## Discovery Model
-
-Codex scans `~/.agents/skills/` at startup and loads skills from the visible directories. With Superpowers installed, the repository contents become available through `~/.agents/skills/superpowers`.
-
 ## Verification
 
-- confirm the skills are visible from the linked directory
-- ask Codex: `use brainstorming to help me plan this feature`
+- confirm `~/.agents/skills/superpowers` points to `~/.codex/superpowers/skills`
+- start a fresh Codex session and ask: `use brainstorming to help me plan this feature`
 - verify that Codex names the `brainstorming` skill or the `using-superpowers` workflow before it starts acting
-- if Codex does not mention a skill, check that the link points to `~/.codex/superpowers/skills` and restart the app
+- if Codex does not mention a skill, re-check the link or junction target and restart Codex
 
 ## Common Failure Modes
 

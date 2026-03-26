@@ -26,32 +26,29 @@ Get Copilot configured so repository-level or personal customizations can suppor
 - access to the repository where repo-scoped skills or custom instructions will live
 - a place to store personal skills if you want cross-repo reuse
 
-## Skills Location
-
-- project skills live in `.github/skills` or `.claude/skills`
-- personal skills live in `~/.copilot/skills` or `~/.claude/skills`
-- use the repo path when the skill is project-specific and the home path when you want reuse across projects
-
-## Custom Instructions
-
-- repository-wide instructions live in `.github/copilot-instructions.md`
-- path-specific instructions live in `.github/instructions/*.instructions.md`
-- agent instructions live in `AGENTS.md`
-- nearest `AGENTS.md` wins when multiple agent instruction files exist in the tree
-- keep `AGENTS.md` for agent behavior, `copilot-instructions.md` for repo-wide guidance, and `.instructions.md` files for scoped paths
-
-## Commands
-
-- `/skills list` shows the skills Copilot can currently see
-- `/skills info` shows the source and location for a skill
-- `/skills reload` refreshes skills after you add or edit them during a session
-
 ## Install Path Or Command
 
-- create the skill in the repo or home directory that matches its intended scope
-- add repository instructions in `.github/copilot-instructions.md` when you want default behavior for the repo
-- add path-specific instructions under `.github/instructions` when behavior should depend on file location
-- use `AGENTS.md` only for agent-oriented instructions that should take precedence near the file being edited
+The GitHub Docs pages that matter here are [Create skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills) and [Add repository instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions).
+
+Use these concrete locations:
+
+- project skills: `.github/skills` or `.claude/skills`
+- personal skills: `~/.copilot/skills` or `~/.claude/skills`
+- repository-wide custom instructions: `.github/copilot-instructions.md`
+- path-specific instructions: `.github/instructions/*.instructions.md`
+- agent instructions: `AGENTS.md`
+
+Keep the scope boundary clear:
+
+- this page covers skills, custom instructions, and coding-agent customization only
+- use the repo path when the skill is project-specific and the home path when you want reuse across projects
+- nearest `AGENTS.md` wins when multiple agent instruction files exist in the tree
+
+The Copilot CLI commands documented by GitHub are:
+
+- `/skills list`
+- `/skills info`
+- `/skills reload`
 
 ## Focus Areas
 

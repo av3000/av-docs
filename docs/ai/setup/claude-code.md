@@ -24,29 +24,25 @@ Get Claude Code configured so Superpowers skills activate predictably without du
 
 - Claude Code installed and working
 - access to the Superpowers marketplace or plugin entry
-- Node.js 18+ if you still need the baseline Claude Code install
 
-## Recommended Install Path
+## Install Path Or Command
 
-Install Claude Code first if it is not already present:
+The current official Claude Code baseline is documented in the [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
 
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-Then install Superpowers from the official marketplace:
+The current Superpowers install path is the official marketplace install documented in the [Superpowers README](https://github.com/obra/superpowers/blob/main/README.md):
 
 ```bash
 /plugin install superpowers@claude-plugins-official
 ```
 
-If you prefer the repository-defined marketplace flow instead, the Superpowers README also documents adding the marketplace first and then installing from it. Keep the official marketplace path as the default here because it is shorter and clearer for first-time setup.
+If you need the alternate marketplace flow from the same README, use:
 
-## Install Path Or Command
+```bash
+/plugin marketplace add obra/superpowers-marketplace
+/plugin install superpowers@superpowers-marketplace
+```
 
-- use the plugin install flow when you want the shortest path to a working setup
-- use the marketplace-add flow only if your environment or repository instructions require it
-- keep the install path local to Claude Code rather than copying the Codex directory layout
+Keep the official marketplace path as the default here because it is shorter and clearer for first-time setup.
 
 ## Where Claude Code Differs
 
@@ -58,9 +54,9 @@ If you prefer the repository-defined marketplace flow instead, the Superpowers R
 ## Verification
 
 - start a new Claude Code session after the plugin install completes
-- ask for a task that should trigger a Superpowers skill, for example `help me plan this feature`
+- ask for a task that should trigger a Superpowers skill, for example `use brainstorming to help me plan this feature`
 - confirm Claude Code invokes the expected skill instead of just answering generically
-- if it does not, re-check the plugin install and restart the session again
+- if it does not, re-check the plugin install and start a new session again
 
 ## Common Failure Modes
 
