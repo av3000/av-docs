@@ -39,6 +39,47 @@ const sidebars: SidebarsConfig = {
       items: ["algorithms/index"],
     },
   ],
+  aiSkillsSidebar: [
+    {
+      type: "category",
+      label: "AI Skills",
+      items: [
+        "ai/index",
+        {
+          type: "category",
+          label: "Concepts",
+          items: [
+            "ai/concepts/core-concepts",
+            "ai/concepts/superpowers-vs-agent-skills",
+          ],
+        },
+        {
+          type: "category",
+          label: "Setup",
+          items: [
+            "ai/setup/codex",
+            "ai/setup/claude-code",
+            "ai/setup/github-copilot",
+          ],
+        },
+        {
+          type: "category",
+          label: "Libraries",
+          items: [
+            "ai/libraries/superpowers",
+            "ai/libraries/agent-skills-and-skills-sh",
+            "ai/libraries/anthropic-skills",
+            "ai/libraries/vercel-agent-skills",
+          ],
+        },
+        {
+          type: "category",
+          label: "Templates",
+          items: ["ai/templates/daily-command-combos"],
+        },
+      ],
+    },
+  ],
   frontendSidebar: [
     {
       type: "category",

@@ -78,6 +78,12 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
+          sidebarId: "aiSkillsSidebar",
+          position: "right",
+          label: "AI Skills",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "algorithmsAndDs",
           position: "right",
           label: "Algorithms & DS",
