@@ -6,7 +6,7 @@ title: AI Skills
 
 ## What This Page Is For
 
-This section explains how to use skills-based AI workflows in practice, with Codex as the primary example and focused notes for Claude Code and GitHub Copilot where they differ.
+This is the orientation page for the AI Skills handbook shell. It points to the workflow and reference material that will be expanded across the rest of the section, with Codex as the primary example and focused notes for Claude Code and GitHub Copilot where they differ.
 
 ## When To Use This
 
@@ -26,9 +26,9 @@ Treat skills as reusable instruction units, Agent Skills and `skills.sh` as the 
 
 ## Start Here
 
-- Read the setup guides for Codex, Claude Code, and GitHub Copilot
-- Read the `superpowers` workflow guide if you want an opinionated end-to-end process
-- Use the daily command combos page when you need copy-paste prompts fast
+- Next: read the setup guides for Codex, Claude Code, and GitHub Copilot as they are added
+- Next: read the `superpowers` workflow guide for the opinionated end-to-end process
+- Next: use the daily command combos page for copy-paste prompts when it lands
 
 ## Source References
 
@@ -36,3 +36,4 @@ Treat skills as reusable instruction units, Agent Skills and `skills.sh` as the 
 - [anthropics/skills](https://github.com/anthropics/skills)
 - [obra/superpowers](https://github.com/obra/superpowers)
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
+- [GitHub Copilot docs](https://docs.github.com/en/copilot)
