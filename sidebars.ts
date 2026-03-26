@@ -39,6 +39,13 @@ const sidebars: SidebarsConfig = {
       items: ["algorithms/index"],
     },
   ],
+  aiSkillsSidebar: [
+    {
+      type: "category",
+      label: "AI Skills",
+      items: ["ai/index"],
+    },
+  ],
   frontendSidebar: [
     {
       type: "category",
