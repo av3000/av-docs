@@ -43,7 +43,17 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "AI Skills",
-      items: ["ai/index"],
+      items: [
+        "ai/index",
+        {
+          type: "category",
+          label: "Concepts",
+          items: [
+            "ai/concepts/core-concepts",
+            "ai/concepts/superpowers-vs-agent-skills",
+          ],
+        },
+      ],
     },
   ],
   frontendSidebar: [
