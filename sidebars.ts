@@ -69,7 +69,13 @@ const sidebars: SidebarsConfig = {
             "ai/libraries/superpowers",
             "ai/libraries/agent-skills-and-skills-sh",
             "ai/libraries/anthropic-skills",
+            "ai/libraries/vercel-agent-skills",
           ],
+        },
+        {
+          type: "category",
+          label: "Templates",
+          items: ["ai/templates/daily-command-combos"],
         },
       ],
     },

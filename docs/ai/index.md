@@ -32,6 +32,8 @@ Treat skills as reusable instruction units, Agent Skills and `skills.sh` as the 
 - Read [Superpowers](./libraries/superpowers.md) for the opinionated workflow layer
 - Read [Agent Skills And skills.sh](./libraries/agent-skills-and-skills-sh.md) for the portability layer
 - Read [anthropics/skills](./libraries/anthropic-skills.md) as a reference/examples source
+- Read [Vercel Agent Skills](./libraries/vercel-agent-skills.md) for targeted React, UI, and guardrail checks
+- Use [Daily Command Combos](./templates/daily-command-combos.md) for copy-paste prompt recipes
 
 ## Source References
 
